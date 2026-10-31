@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "source_sha256": {
+    "base": "053dbacc8f0de4e6111ccb89cb91f629840852cf482a6ca423fe0eaff419c086",
+    "A": "c63101beb22d6fd41c67efcdb1fe7abb3f6b4a24e1a7a6182a69d32643e4c85d",
+    "B": "15ac798ebe757774b52b36a94879a7faf1c14e4db2fa80bbfefe984afbc1d726"
+  },
+  "outside_literal_sha256": "92af6c5c98e40eae019495020f428260e4a9c2f375ae841bbd80ca8d8d121640",
+  "non_wgs_source_sha256": "6fafc17f2ac98cfb7b8768965372f1ba4a74ee5df0c6f5a164726f5b9219cb8c",
+  "small_loads": [
+    "D1",
+    "D16",
+    "V1"
+  ],
+  "scope": "Unchanged host/helper/front/back source and non-WGS branches; no oracle numerical claim"
+}

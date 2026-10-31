@@ -1,0 +1,226 @@
+{
+  "status": "measured_reasons_no_winner",
+  "completed_measurements_at": "2026-10-30T23:56:33.986655-07:00",
+  "official_checks_used": 0,
+  "ranked_submits_used": 0,
+  "promoted_candidate": null,
+  "aa": {
+    "path": "outputs/openkernel-challenge/modal-lab/layer-okc-h200-dense-02/dense-aa36.json",
+    "ratios": {
+      "candidate": 1.0000464750068736,
+      "base_repeat": 0.9977088436878505
+    },
+    "every_load_within_one_percent": true,
+    "reference_checks": 3240
+  },
+  "large": {
+    "raw_path": "outputs/openkernel-challenge/modal-lab/layer-okc-h200-dense-02/large_raw_fixed.json",
+    "raw_rows": 112,
+    "raw_every_row_passed": true,
+    "optimistic_board_ceiling_ratio": 1.0755359426544269,
+    "real_path": "outputs/openkernel-challenge/modal-lab/layer-okc-h200-dense-02/dense-tma-fence.json",
+    "real_reference_checks": 6912,
+    "best_base_over_candidate": 0.8889499972920404,
+    "real_shapes": [
+      {
+        "m": 128,
+        "layer": "qkv_gate",
+        "best_cfg": "0",
+        "config": [
+          64,
+          1,
+          6,
+          1
+        ],
+        "median_us": 41.69600084424019,
+        "base_median_us": 18.592000007629395,
+        "median_ratio": 0.4464961270126092,
+        "control_ratio": 1.0077483301238097
+      },
+      {
+        "m": 128,
+        "layer": "o",
+        "best_cfg": "4",
+        "config": [
+          128,
+          1,
+          6,
+          1
+        ],
+        "median_us": 13.120000250637531,
+        "base_median_us": 11.42400037497282,
+        "median_ratio": 0.8688687601222651,
+        "control_ratio": 1.0013850117374696
+      },
+      {
+        "m": 128,
+        "layer": "pooler",
+        "best_cfg": "0",
+        "config": [
+          64,
+          1,
+          6,
+          1
+        ],
+        "median_us": 41.98399931192398,
+        "base_median_us": 24.575999937951565,
+        "median_ratio": 0.5846472871621107,
+        "control_ratio": 1.0
+      },
+      {
+        "m": 128,
+        "layer": "unpooler",
+        "best_cfg": "4",
+        "config": [
+          128,
+          1,
+          6,
+          1
+        ],
+        "median_us": 26.35199949145317,
+        "base_median_us": 23.69599975645542,
+        "median_ratio": 0.8889499972920404,
+        "control_ratio": 1.0069253924608157
+      },
+      {
+        "m": 256,
+        "layer": "qkv_gate",
+        "best_cfg": "4",
+        "config": [
+          128,
+          1,
+          6,
+          1
+        ],
+        "median_us": 42.160000652074814,
+        "base_median_us": 22.656000219285488,
+        "median_ratio": 0.5359402016482482,
+        "control_ratio": 1.0078057532745588
+      },
+      {
+        "m": 256,
+        "layer": "o",
+        "best_cfg": "8",
+        "config": [
+          256,
+          1,
+          4,
+          1
+        ],
+        "median_us": 16.448000445961952,
+        "base_median_us": 13.391999993473291,
+        "median_ratio": 0.8202358085084509,
+        "control_ratio": 1.0036262528724569
+      },
+      {
+        "m": 256,
+        "layer": "pooler",
+        "best_cfg": "4",
+        "config": [
+          128,
+          1,
+          6,
+          1
+        ],
+        "median_us": 42.78399981558323,
+        "base_median_us": 28.36799994111061,
+        "median_ratio": 0.6629331192688397,
+        "control_ratio": 0.9765250225039888
+      },
+      {
+        "m": 256,
+        "layer": "unpooler",
+        "best_cfg": "6",
+        "config": [
+          128,
+          2,
+          5,
+          1
+        ],
+        "median_us": 36.079999059438705,
+        "base_median_us": 28.351999819278717,
+        "median_ratio": 0.7871717547753628,
+        "control_ratio": 1.0022536443304224
+      }
+    ],
+    "decision": "No real shape won. Plain TMA beat multicast on every winning geometry; retain upstream. Raw roof omitted required work."
+  },
+  "codec": {
+    "fixed_path": "outputs/openkernel-challenge/modal-lab/layer-okc-h200-dense-02/codec-bound.json",
+    "matrix_seed_cases": 15,
+    "per_matrix_entropy_range": [
+      10.46321708802925,
+      10.464664538937418
+    ],
+    "fixed11_cold_slowdown_range": [
+      1.0588235503920351,
+      1.108225130914327
+    ],
+    "huffman_paths": [
+      "outputs/openkernel-challenge/modal-lab/layer-okc-h200-dense-02/huffman-bound.json",
+      "outputs/openkernel-challenge/modal-lab/layer-okc-h200-dense-02/huffman-6161.json",
+      "outputs/openkernel-challenge/modal-lab/layer-okc-h200-dense-02/huffman-7171.json"
+    ],
+    "huffman_cases": 14,
+    "huffman_gpu_full_bit_checks_passed": true,
+    "huffman_checksum_replays": 1008,
+    "huffman_bits_range": [
+      10.957234382629395,
+      10.968246459960938
+    ],
+    "huffman_paired_slowdown_range": [
+      2.2192215723814175,
+      3.020519394514904
+    ],
+    "huffman_byte_only_board_ceiling": 1.0528641912599987,
+    "decision": "<=11-bit lossless storage achieved, not cheap decode:2.2\u20133.1x matched fixed12 core. No production GEMV build or official spend."
+  },
+  "limits": [
+    "All timings are diagnostics, not official scores.",
+    "Fixed12 Huffman control omits rare corrections; exact Huffman decodes every code.",
+    "TMA screens contain some >1% per-variant controls; no positive gain promoted.",
+    "No proof that all possible custom GEMMs or variable codecs are unprofitable.",
+    "Per-experiment JSON is authoritative; runner script-stem logs and generated CUDA can be overwritten by later runs."
+  ],
+  "shutdown": {
+    "verified": true,
+    "command": "OKC_LANE=dense python3 work/modal/lab.py stop; OKC_LANE=dense modal container list --json",
+    "ledger": "outputs/openkernel-challenge/modal-budget-dense.json",
+    "sessions": [
+      {
+        "name": "okc-h200-dense-01",
+        "sandbox_id": "sb-ZB0rlY7N7p0H65UkPh9emF",
+        "state": "finished",
+        "exit_code": 137,
+        "observed_finished_at": "2026-10-31T06:34:53.344112+00:00"
+      },
+      {
+        "name": "okc-h200-dense-02",
+        "sandbox_id": "sb-uKMv5oYTkW3cLx8U4EPVf1",
+        "state": "finished",
+        "exit_code": 137,
+        "observed_finished_at": "2026-10-31T06:59:21.880789+00:00"
+      }
+    ],
+    "all_lane_sessions_finished": true,
+    "container_list_inspected": true,
+    "remaining_container_ids": [
+      "ta-01M68BZY55M3VFRAPE2DR8Q7NS",
+      "ta-01M68BJ9J7YBV6D3XRGY3G193S"
+    ],
+    "other_containers_untouched": true
+  },
+  "spend": {
+    "billing_checked_at": "2026-10-31T06:59:22.855508+00:00",
+    "account_month_metered_usd": 23.81,
+    "account_billed_usd": 0.0,
+    "lane_observed_lifetime_seconds": 1653.2104519999998,
+    "lane_conservative_lifetime_upper_usd": 3.4765693237198394,
+    "warning": "Lane cost is a conservative configured-rate lifetime estimate, not an actual charge; account billing is shared across lanes."
+  },
+  "audit": {
+    "baseline_sha256": "290a86ab852c851ad0307002a55a432a1ffce44d7ef51d529e19284193647b90",
+    "baseline_matches_screen": true,
+    "all_named_deliverables_verified": true
+  }
+}

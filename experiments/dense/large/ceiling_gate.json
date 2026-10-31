@@ -1,0 +1,125 @@
+{
+  "scope": "Optimistic ceiling only, not a candidate result: measured exact-shape core span + ideal4.6TB/s HBM with free launch/pipeline/epilogue; prior upstream official comparison is unpaired. Whole raw timings retained separately and not subtracted.",
+  "raw_source": "outputs/openkernel-challenge/modal-lab/layer-okc-h200-dense-02/large_raw_fixed.json",
+  "baseline_source": "work/prior-art/alygg77/results.json",
+  "loads": [
+    {
+      "m": 1,
+      "prior_official_us": 34.698,
+      "ideal_us": 34.698,
+      "ideal_saved_us": 0.0,
+      "ratio": 1.0
+    },
+    {
+      "m": 16,
+      "prior_official_us": 46.784,
+      "ideal_us": 46.784000000000006,
+      "ideal_saved_us": -7.105427357601002e-15,
+      "ratio": 0.9999999999999999
+    },
+    {
+      "m": 32,
+      "prior_official_us": 51.438,
+      "ideal_us": 51.438,
+      "ideal_saved_us": 0.0,
+      "ratio": 1.0
+    },
+    {
+      "m": 8,
+      "prior_official_us": 37.338,
+      "ideal_us": 37.338,
+      "ideal_saved_us": 0.0,
+      "ratio": 1.0
+    },
+    {
+      "m": 128,
+      "prior_official_us": 65.534,
+      "ideal_us": 50.36158608695652,
+      "ideal_saved_us": 15.172413913043485,
+      "ratio": 1.3012695804863281
+    },
+    {
+      "m": 256,
+      "prior_official_us": 81.42699999999999,
+      "ideal_us": 68.452,
+      "ideal_saved_us": 12.974999999999994,
+      "ratio": 1.1895488809676853
+    }
+  ],
+  "rows": [
+    {
+      "m": 128,
+      "layer": "qkv_gate",
+      "prior_official_us": 13.793,
+      "core_span_us": 9.888,
+      "ideal_4_6TBs_bytes_us": 8.790372173913044,
+      "ideal_us": 9.888,
+      "cfg": 0
+    },
+    {
+      "m": 128,
+      "layer": "o",
+      "prior_official_us": 6.963,
+      "core_span_us": 2.72,
+      "ideal_4_6TBs_bytes_us": 4.160111304347826,
+      "ideal_us": 4.160111304347826,
+      "cfg": 2
+    },
+    {
+      "m": 128,
+      "layer": "pooler",
+      "prior_official_us": 19.936,
+      "core_span_us": 9.856,
+      "ideal_4_6TBs_bytes_us": 15.272737391304348,
+      "ideal_us": 15.272737391304348,
+      "cfg": 0
+    },
+    {
+      "m": 128,
+      "layer": "unpooler",
+      "prior_official_us": 19.074,
+      "core_span_us": 9.824,
+      "ideal_4_6TBs_bytes_us": 15.272737391304348,
+      "ideal_us": 15.272737391304348,
+      "cfg": 2
+    },
+    {
+      "m": 256,
+      "layer": "qkv_gate",
+      "prior_official_us": 17.266,
+      "core_span_us": 18.88,
+      "ideal_4_6TBs_bytes_us": 9.374497391304347,
+      "ideal_us": 17.266,
+      "cfg": 1
+    },
+    {
+      "m": 256,
+      "layer": "o",
+      "prior_official_us": 9.259,
+      "core_span_us": 5.184,
+      "ideal_4_6TBs_bytes_us": 4.673001739130434,
+      "ideal_us": 5.184,
+      "cfg": 3
+    },
+    {
+      "m": 256,
+      "layer": "pooler",
+      "prior_official_us": 24.355,
+      "core_span_us": 19.264,
+      "ideal_4_6TBs_bytes_us": 15.956591304347826,
+      "ideal_us": 19.264,
+      "cfg": 2
+    },
+    {
+      "m": 256,
+      "layer": "unpooler",
+      "prior_official_us": 23.201,
+      "core_span_us": 19.392,
+      "ideal_4_6TBs_bytes_us": 15.956591304347826,
+      "ideal_us": 19.392,
+      "cfg": 4
+    }
+  ],
+  "ideal_geomean_ratio": 1.0755359426544269,
+  "gate_passed": true
+}

@@ -1,0 +1,113 @@
+{
+  "status": "complete",
+  "qualified_recovery": false,
+  "handoff_created": false,
+  "baseline_sha256": "053dbacc8f0de4e6111ccb89cb91f629840852cf482a6ca423fe0eaff419c086",
+  "cost_matrix": "work/lanes/experts-v32/precision-costs.json",
+  "native_stage_matrix": "work/lanes/experts-v32/precision-native-stage-costs.json",
+  "semantic_records": 27,
+  "measured_fixed_input_stage_comparisons": 120,
+  "raw_repaired_whole_layer_ratio": 1.0060112799700804,
+  "raw_repaired_control_ratio": 0.9989097494032858,
+  "candidates": {
+    "cached_gain": {
+      "path": "work/lanes/experts-v32/decode_gain_cached.py",
+      "sha256": "e17e99886c9711b0e74d09b20465243f79ccfd60617d363429fad88893ed76bb",
+      "whole_decode_ratio": 0.9968153222787346,
+      "control_ratio": 1.0004405200132551,
+      "all_case_controls_passed": false,
+      "per_load": {
+        "D1": {
+          "public_ratio": 0.9939365458743783,
+          "delta_us": -0.4802552923079446,
+          "baseline_repeat_ratio": 0.9937595915411541,
+          "routes_equal": true
+        },
+        "D16": {
+          "public_ratio": 0.9956327852067195,
+          "delta_us": -0.6539326521658211,
+          "baseline_repeat_ratio": 1.006315074174693,
+          "routes_equal": true
+        },
+        "D32": {
+          "public_ratio": 0.9933911014903267,
+          "delta_us": -1.2725139817883928,
+          "baseline_repeat_ratio": 0.9960959000948689,
+          "routes_equal": true
+        },
+        "V1": {
+          "public_ratio": 1.0069250275645436,
+          "delta_us": 0.8338072727764825,
+          "baseline_repeat_ratio": 1.004150983375723,
+          "routes_equal": true
+        },
+        "V16": {
+          "public_ratio": 0.9981715217097575,
+          "delta_us": -0.5468471396354175,
+          "baseline_repeat_ratio": 1.0026079759393558,
+          "routes_equal": false
+        },
+        "V32": {
+          "public_ratio": 0.9929052465730195,
+          "delta_us": -2.597164963522289,
+          "baseline_repeat_ratio": 0.9997720755173883,
+          "routes_equal": true
+        }
+      },
+      "decision": "not promoted: no qualifying>=0.5% recovery; per-case control failure also prevents a small-gain claim"
+    },
+    "single_cta_b1": {
+      "path": "work/lanes/experts-v32/decode_b1_row.py",
+      "sha256": "504e75b27e85caa37e112e0330853381faa910c5ec16b760d602a3df3ebefa31",
+      "whole_decode_ratio": 0.9959670272562248,
+      "control_ratio": 1.0034294215082389,
+      "all_case_controls_passed": false,
+      "per_load": {
+        "D1": {
+          "public_ratio": 1.0064980585702539,
+          "delta_us": 0.5158703894384473,
+          "baseline_repeat_ratio": 1.0134989998235358,
+          "routes_equal": true
+        },
+        "D16": {
+          "public_ratio": 0.9939313072364072,
+          "delta_us": -0.9109663867181155,
+          "baseline_repeat_ratio": 1.002867517871955,
+          "routes_equal": true
+        },
+        "D32": {
+          "public_ratio": 0.9967919744638634,
+          "delta_us": -0.6229687602289289,
+          "baseline_repeat_ratio": 1.002730000569535,
+          "routes_equal": true
+        },
+        "V1": {
+          "public_ratio": 0.9897918280217356,
+          "delta_us": -1.245937039775228,
+          "baseline_repeat_ratio": 1.0047160444567749,
+          "routes_equal": true
+        },
+        "V16": {
+          "public_ratio": 0.9947284653543201,
+          "delta_us": -1.601288155201928,
+          "baseline_repeat_ratio": 0.9964452449217741,
+          "routes_equal": true
+        },
+        "V32": {
+          "public_ratio": 0.9941399131231377,
+          "delta_us": -2.162068120894901,
+          "baseline_repeat_ratio": 1.000399140495464,
+          "routes_equal": true
+        }
+      },
+      "decision": "not promoted: no qualifying>=0.5% recovery; per-case control failure also prevents a small-gain claim"
+    }
+  },
+  "precision_evidence": {
+    "cached_gain": "outputs/openkernel-challenge/modal-lab/layer-okc-h200-experts-v32-09/gain-cache-check.json",
+    "single_cta_b1": "work/lanes/experts-v32/b1-row-check-recovered.json"
+  },
+  "decision": "Retain MAIN repaired implementation. Required rounds are already fused; full-input stage tests reveal no qualifying simple recovery. Do not remove audited precision to chase raw timings.",
+  "official_checks": 0,
+  "ranked_submissions": 0
+}

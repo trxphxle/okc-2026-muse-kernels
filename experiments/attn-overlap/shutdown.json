@@ -1,0 +1,39 @@
+{
+  "checked_at": "2026-10-30T23:35:47.197150-07:00",
+  "command": "OKC_LANE=attn-overlap modal container list --json",
+  "active_containers": [
+    {
+      "container_id": "ta-01M68AMHA5TX0XVTBM180CVY3S",
+      "app_id": "ap-9BIFOlsEb8LVepwPS3okyf",
+      "app_name": "okc-trxphxle-01a18750",
+      "start_time": "2026-10-30 23:34:03-07:00"
+    },
+    {
+      "container_id": "ta-01M68ADV990KQM6YW0STKJ9F0S",
+      "app_id": "ap-9BIFOlsEb8LVepwPS3okyf",
+      "app_name": "okc-trxphxle-01a18750",
+      "start_time": "2026-10-30 23:30:24-07:00"
+    }
+  ],
+  "lane_sessions": [
+    {
+      "name": "okc-h200-attn-overlap-01",
+      "sandbox_id": "sb-S9PE2y0tlsrwfaTPdDVlw4",
+      "state": "finished",
+      "exit_code": 137,
+      "last_layer_exit_code": 1,
+      "last_layer_finished_at": "2026-10-31T06:30:35.321006+00:00",
+      "observed_finished_at": "2026-10-31T06:30:35.320965+00:00"
+    },
+    {
+      "name": "okc-h200-attn-overlap-02",
+      "sandbox_id": "sb-n7c4nYXgSeP8KmUMhqS0zI",
+      "state": "finished",
+      "exit_code": 137,
+      "last_layer_exit_code": 0,
+      "last_layer_finished_at": "2026-10-31T06:34:29.185274+00:00",
+      "observed_finished_at": "2026-10-31T06:35:04.094507+00:00"
+    }
+  ],
+  "conservative_lane_runtime_upper_usd": 0.59594593942328
+}

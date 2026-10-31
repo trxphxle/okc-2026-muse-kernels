@@ -1,0 +1,470 @@
+{
+  "status": "verified_ceiling_only",
+  "production_build": false,
+  "official_checks_used": 0,
+  "sources": {
+    "timing": "outputs/openkernel-challenge/modal-lab/layer-okc-h200-dense-05/layer-stream-flat.json",
+    "counter_proof": "outputs/openkernel-challenge/modal-lab/layer-okc-h200-dense-05/stream-flat-counter-proof.json",
+    "grouped": "outputs/openkernel-challenge/modal-lab/layer-okc-h200-dense-04/layer-stream-bound.json"
+  },
+  "baseline_sha256": "053dbacc8f0de4e6111ccb89cb91f629840852cf482a6ca423fe0eaff419c086",
+  "weight_seed": 5353,
+  "reader_kind": "flat",
+  "rows": [
+    {
+      "load": "D1",
+      "layer": "sliding",
+      "fixture_count": 3,
+      "native_layer_us": 71.97737630208333,
+      "native_stream_us": 60.475911458333336,
+      "native_gap_us": 11.501464843749993,
+      "event_layer_us": 75.80799857775371,
+      "event_stream_us": 65.06133389969666,
+      "mean_payload_bytes": 214533392,
+      "payload_bytes_per_fixture": [
+        195659024,
+        252282128,
+        195659024
+      ],
+      "active_experts_per_fixture": [
+        2,
+        4,
+        2
+      ],
+      "kv_bytes_per_fixture": [
+        524288,
+        524288,
+        524288
+      ],
+      "mean_category_bytes": {
+        "dense.qkv_gate": 37748736,
+        "dense.o": 16777216,
+        "dense.pooler": 67108864,
+        "dense.router": 8388608,
+        "dense.unpooler": 8388608,
+        "norm_gate_bias": 99328,
+        "experts.w13": 44739242.666666664,
+        "experts.w13_sf": 5592405.333333333,
+        "experts.w2": 22369621.333333332,
+        "experts.w2_sf": 2796202.6666666665,
+        "experts.global_scales": 256,
+        "kv.k_cache": 262144,
+        "kv.v_cache": 262144,
+        "kv.scales": 16
+      },
+      "native_base_kernel_counts": [
+        9,
+        9,
+        9
+      ],
+      "aa_ratio": 0.996481182289319
+    },
+    {
+      "load": "D1",
+      "layer": "full",
+      "fixture_count": 3,
+      "native_layer_us": 75.833984375,
+      "native_stream_us": 50.456380208333336,
+      "native_gap_us": 25.377604166666664,
+      "event_layer_us": 80.50133287906647,
+      "event_stream_us": 55.178665866454445,
+      "mean_payload_bytes": 225052176,
+      "payload_bytes_per_fixture": [
+        215614992,
+        215614992,
+        243926544
+      ],
+      "active_experts_per_fixture": [
+        2,
+        2,
+        3
+      ],
+      "kv_bytes_per_fixture": [
+        20480256,
+        20480256,
+        20480256
+      ],
+      "mean_category_bytes": {
+        "dense.qkv_gate": 37748736,
+        "dense.o": 16777216,
+        "dense.pooler": 67108864,
+        "dense.router": 8388608,
+        "dense.unpooler": 8388608,
+        "norm_gate_bias": 99328,
+        "experts.w13": 39146837.333333336,
+        "experts.w13_sf": 4893354.666666667,
+        "experts.w2": 19573418.666666668,
+        "experts.w2_sf": 2446677.3333333335,
+        "experts.global_scales": 256,
+        "kv.k_cache": 10240128,
+        "kv.v_cache": 10240128,
+        "kv.scales": 16
+      },
+      "native_base_kernel_counts": [
+        9,
+        9,
+        9
+      ],
+      "aa_ratio": 1.001637283024285
+    },
+    {
+      "load": "V1",
+      "layer": "sliding",
+      "fixture_count": 3,
+      "native_layer_us": 106.74462890625,
+      "native_stream_us": 87.67952473958333,
+      "native_gap_us": 19.06510416666667,
+      "event_layer_us": 111.40799894928932,
+      "event_stream_us": 93.86666615804036,
+      "mean_payload_bytes": 346655760,
+      "payload_bytes_per_fixture": [
+        337218576,
+        393841680,
+        308907024
+      ],
+      "active_experts_per_fixture": [
+        7,
+        9,
+        6
+      ],
+      "kv_bytes_per_fixture": [
+        526080,
+        526080,
+        526080
+      ],
+      "mean_category_bytes": {
+        "dense.qkv_gate": 37748736,
+        "dense.o": 16777216,
+        "dense.pooler": 67108864,
+        "dense.router": 8388608,
+        "dense.unpooler": 8388608,
+        "norm_gate_bias": 99328,
+        "experts.w13": 123032917.33333333,
+        "experts.w13_sf": 15379114.666666666,
+        "experts.w2": 61516458.666666664,
+        "experts.w2_sf": 7689557.333333333,
+        "experts.global_scales": 256,
+        "kv.k_cache": 263040,
+        "kv.v_cache": 263040,
+        "kv.scales": 16
+      },
+      "native_base_kernel_counts": [
+        9,
+        9,
+        9
+      ],
+      "aa_ratio": 1.0026409453548768
+    },
+    {
+      "load": "V1",
+      "layer": "full",
+      "fixture_count": 3,
+      "native_layer_us": 116.44352213541667,
+      "native_stream_us": 83.3759765625,
+      "native_gap_us": 33.06754557291667,
+      "event_layer_us": 119.80266496539116,
+      "event_stream_us": 88.40533345937729,
+      "mean_payload_bytes": 376048912,
+      "payload_bytes_per_fixture": [
+        385486096,
+        328862992,
+        413797648
+      ],
+      "active_experts_per_fixture": [
+        8,
+        6,
+        9
+      ],
+      "kv_bytes_per_fixture": [
+        20482048,
+        20482048,
+        20482048
+      ],
+      "mean_category_bytes": {
+        "dense.qkv_gate": 37748736,
+        "dense.o": 16777216,
+        "dense.pooler": 67108864,
+        "dense.router": 8388608,
+        "dense.unpooler": 8388608,
+        "norm_gate_bias": 99328,
+        "experts.w13": 128625322.66666667,
+        "experts.w13_sf": 16078165.333333334,
+        "experts.w2": 64312661.333333336,
+        "experts.w2_sf": 8039082.666666667,
+        "experts.global_scales": 256,
+        "kv.k_cache": 10241024,
+        "kv.v_cache": 10241024,
+        "kv.scales": 16
+      },
+      "native_base_kernel_counts": [
+        9,
+        9,
+        9
+      ],
+      "aa_ratio": 0.9983871144170552
+    },
+    {
+      "load": "D16",
+      "layer": "sliding",
+      "fixture_count": 3,
+      "native_layer_us": 125.12451171875,
+      "native_stream_us": 290.8977864583333,
+      "native_gap_us": -165.77327473958331,
+      "event_layer_us": 129.1146663328012,
+      "event_stream_us": 295.1093365748723,
+      "mean_payload_bytes": 413238544,
+      "payload_bytes_per_fixture": [
+        375489808,
+        432112912,
+        432112912
+      ],
+      "active_experts_per_fixture": [
+        6,
+        8,
+        8
+      ],
+      "kv_bytes_per_fixture": [
+        8388608,
+        8388608,
+        8388608
+      ],
+      "mean_category_bytes": {
+        "dense.qkv_gate": 37748736,
+        "dense.o": 16777216,
+        "dense.pooler": 67108864,
+        "dense.router": 8388608,
+        "dense.unpooler": 67108864,
+        "norm_gate_bias": 99328,
+        "experts.w13": 123032917.33333333,
+        "experts.w13_sf": 15379114.666666666,
+        "experts.w2": 61516458.666666664,
+        "experts.w2_sf": 7689557.333333333,
+        "experts.global_scales": 256,
+        "kv.k_cache": 4194304,
+        "kv.v_cache": 4194304,
+        "kv.scales": 16
+      },
+      "native_base_kernel_counts": [
+        9,
+        9,
+        9
+      ],
+      "aa_ratio": 1.0026029667930385
+    },
+    {
+      "load": "D16",
+      "layer": "full",
+      "fixture_count": 3,
+      "native_layer_us": 201.59765625,
+      "native_stream_us": 660.1193033854166,
+      "native_gap_us": -458.52164713541663,
+      "event_layer_us": 205.08800198634466,
+      "event_stream_us": 663.8079981009165,
+      "mean_payload_bytes": 733395386.6666666,
+      "payload_bytes_per_fixture": [
+        697554704,
+        751332880,
+        751298576
+      ],
+      "active_experts_per_fixture": [
+        6,
+        8,
+        8
+      ],
+      "kv_bytes_per_fixture": [
+        330453504,
+        327608576,
+        327574272
+      ],
+      "mean_category_bytes": {
+        "dense.qkv_gate": 37748736,
+        "dense.o": 16777216,
+        "dense.pooler": 67108864,
+        "dense.router": 8388608,
+        "dense.unpooler": 67108864,
+        "norm_gate_bias": 99328,
+        "experts.w13": 123032917.33333333,
+        "experts.w13_sf": 15379114.666666666,
+        "experts.w2": 61516458.666666664,
+        "experts.w2_sf": 7689557.333333333,
+        "experts.global_scales": 256,
+        "kv.k_cache": 164272725.33333334,
+        "kv.v_cache": 164272725.33333334,
+        "kv.scales": 16
+      },
+      "native_base_kernel_counts": [
+        9,
+        9,
+        9
+      ],
+      "aa_ratio": 0.9996033798243549
+    }
+  ],
+  "loads": {
+    "D1": {
+      "weighted_event_us": {
+        "base": 77.01918162325377,
+        "base_repeat": 77.13737671253503,
+        "stream": 62.51096795563416
+      },
+      "aa_ratio": 0.998467732578958,
+      "aa_cases_within_one_percent": true,
+      "weighted_native_us": {
+        "base": 72.97262999831989,
+        "stream": 57.89022597446237
+      },
+      "event_gap_us": 14.508213667619614,
+      "event_ideal_ratio": 1.2320906897157073,
+      "native_gap_us": 15.08240402385752,
+      "native_ideal_ratio": 1.2605345508672043
+    },
+    "V1": {
+      "weighted_event_us": {
+        "base": 113.57436437279948,
+        "base_repeat": 113.4995269358799,
+        "stream": 92.45728997774022
+      },
+      "aa_ratio": 1.0006593634259098,
+      "aa_cases_within_one_percent": true,
+      "weighted_native_us": {
+        "base": 109.24756909442205,
+        "stream": 86.56893166162634
+      },
+      "event_gap_us": 21.117074395059262,
+      "event_ideal_ratio": 1.2283981544358844,
+      "native_gap_us": 22.67863743279571,
+      "native_ideal_ratio": 1.2619720146419289
+    },
+    "D16": {
+      "weighted_event_us": {
+        "base": 148.72068843694146,
+        "base_repeat": 148.58356879283022,
+        "stream": 390.2573782590128
+      },
+      "aa_ratio": 1.0009228452730357,
+      "aa_cases_within_one_percent": true,
+      "weighted_native_us": {
+        "base": 144.8595167590726,
+        "stream": 386.1807585685484
+      },
+      "event_gap_us": -241.53668982207134,
+      "event_ideal_ratio": 0.38108360462114294,
+      "native_gap_us": -241.32124180947582,
+      "native_ideal_ratio": 0.37510806415115455
+    }
+  },
+  "ceilings": {
+    "D1+V1": {
+      "native": {
+        "geomean_ratio": 1.080440229185247,
+        "improvement_percent": 8.044022918524707,
+        "load_ratios": {
+          "D1": 1.2605345508672043,
+          "D16": 1.0,
+          "D32": 1.0,
+          "V1": 1.2619720146419289,
+          "V16": 1.0,
+          "V32": 1.0
+        },
+        "equal_added_work_budget_for_five_percent_us": 6.221091658842816
+      },
+      "event": {
+        "geomean_ratio": 1.0715118340266896,
+        "improvement_percent": 7.151183402668959,
+        "load_ratios": {
+          "D1": 1.2320906897157073,
+          "D16": 1.0,
+          "D32": 1.0,
+          "V1": 1.2283981544358844,
+          "V16": 1.0,
+          "V32": 1.0
+        },
+        "equal_added_work_budget_for_five_percent_us": 4.68425632737587
+      },
+      "passes_five_percent_on_both_timers": true
+    },
+    "D1+V1+D16": {
+      "native": {
+        "geomean_ratio": 0.9175438173371233,
+        "improvement_percent": -8.245618266287668,
+        "load_ratios": {
+          "D1": 1.2605345508672043,
+          "D16": 0.37510806415115455,
+          "D32": 1.0,
+          "V1": 1.2619720146419289,
+          "V16": 1.0,
+          "V32": 1.0
+        }
+      },
+      "event": {
+        "geomean_ratio": 0.912361637360886,
+        "improvement_percent": -8.763836263911395,
+        "load_ratios": {
+          "D1": 1.2320906897157073,
+          "D16": 0.38108360462114294,
+          "D32": 1.0,
+          "V1": 1.2283981544358844,
+          "V16": 1.0,
+          "V32": 1.0
+        }
+      },
+      "passes_five_percent_on_both_timers": false
+    }
+  },
+  "byte_proof": {
+    "fixture_count": 18,
+    "all_passed": true,
+    "dram_over_payload_ratio_range": [
+      1.0007739048337945,
+      1.0064601320367736
+    ],
+    "extra_beyond_payload_and_descriptors_range": [
+      15928.0,
+      64552.0
+    ]
+  },
+  "limitations": [
+    "routing computation/page selection is a free frozen-fixture oracle",
+    "no arithmetic or inter-stage dependencies",
+    "no layer outputs or KV writes",
+    "activation intermediates, output traffic and synchronization not modeled",
+    "native BF16 weight bytes are not baseline compressed physical traffic",
+    "This is a measured zero-math native-format stand-in, not a universal hardware lower bound or implemented speedup.",
+    "Changing a load means replacing its46:16 weighted sliding/full time; all other loads remain exactly1x in the six-load geomean.",
+    "Native profile spans and captured-event timings are independently observed; no replay-cost subtraction.",
+    "The5% gate is necessary evidence only; this task authorizes no production megakernel."
+  ],
+  "grouped_comparison": {
+    "same_payload_and_route_page_coverage": true,
+    "grouped_ceilings": {
+      "D1+V1_event": {
+        "geomean_ratio": 1.0078853958564333,
+        "improvement_percent": 0.788539585643333,
+        "passes_five_percent": false,
+        "unchanged_load_count": 4,
+        "scope": "zero-math native-byte oracle bound, NOT achievable implementation gain"
+      },
+      "D1+V1_native": {
+        "geomean_ratio": 1.0093887498221474,
+        "improvement_percent": 0.9388749822147435,
+        "passes_five_percent": false,
+        "unchanged_load_count": 4,
+        "scope": "zero-math native-byte oracle bound, NOT achievable implementation gain"
+      },
+      "D1+V1+D16_event": {
+        "geomean_ratio": 0.9915554039200929,
+        "improvement_percent": -0.8444596079907107,
+        "passes_five_percent": false,
+        "unchanged_load_count": 3,
+        "scope": "zero-math native-byte oracle bound, NOT achievable implementation gain"
+      },
+      "D1+V1+D16_native": {
+        "geomean_ratio": 0.994031541542481,
+        "improvement_percent": -0.5968458457519032,
+        "passes_five_percent": false,
+        "unchanged_load_count": 3,
+        "scope": "zero-math native-byte oracle bound, NOT achievable implementation gain"
+      }
+    }
+  }
+}

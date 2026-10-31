@@ -1,0 +1,1021 @@
+{
+  "verification": {
+    "status": "PASS",
+    "completed_at": "2026-10-30T23:52:42.561879-07:00",
+    "snapshot_sha256_matches": 6,
+    "stored_alias_board_cells_checked": 264,
+    "unique_aliases": 33,
+    "unique_alias_board_pairs": 198,
+    "substantive_repository_revision_identifiers_recorded": 24,
+    "rohan_dense_first_bank_cases_checked": 30,
+    "kernel_runs": 0,
+    "official_checks": 0,
+    "scope": "Current EVIDENCE.json parsed and compared against all six unchanged saved leaderboard snapshots; normalized/raw source-data arithmetic checked. Not GPU correctness or performance qualification."
+  },
+  "additional_repository_pins": {
+    "chenwainuo/okc": "3d418e1625f6de2075b5684a27ddbc3d1442422d",
+    "Madhavan113/ParadigmKernelChallenge": "721c62729fa0b407799692f311790643706f292d",
+    "rohanarun/Auto-research-agent": "018b7a102348ea3b73701e8be52d24f82d8c91ee",
+    "operatorstack/open-kernel-challenge-solutions": "6d9b77656b6c295e421be9e1424b0f8f99299b0a",
+    "lee101/openkernels": "c565e373d34575c5f7df862b05f8be7619078b0f",
+    "Xuefeng-Zhu/open-kernel-challenge": "5372a758c7d4c03431ed4887f75dfb7d5e53aa1b",
+    "iyerramji/open-kernel-challenge": "1d57ff7749433d0d18b294744e607cd82e33057f",
+    "ozgureyilmaz/okc-muse-kernels": "74daa3a6990168b52359c80955014a945fc7aa4e",
+    "MadanChaollaPark/open-kernel-experiments": "40154c27d4b694c7d641c7959b00d7ff24a7c2e4",
+    "infraax/okc-kernel-challenge": "896b816dc5fd418e1f167578eb35680b116b68f3",
+    "ScrashOff/okc-muse-kernels": "d870912e7c5a030c52050bb2445418224c28d9de",
+    "xharshvardhan/open-kernel-challenge": "4958d3141aa977c4b6b26df7a8d06c90dd094ee9",
+    "Kushagrabainsla/muse-spark-open": "0778ecd8293e375ffe33faa466db0231929aaac3",
+    "Aravind-11/muse-moe-w4a16": "399305738cfb9effc85555e05b8691ba6c769813",
+    "GiulianoIntelligence/Muse-FlashSpeed-Kernel": "d47f9fc825fd2ae6c05b1af02e51f8d570a71437",
+    "Ranoobaba/okc-campaign": "3831ab3c3538a9878031b667624240bd24bb7082",
+    "lilaclilac09/open-kernel-challenge": "d9bdcc9f01dff1018f2f256a0a1a63911a16557e",
+    "tommyyliu/okc": "f134725e27f368588bd9ef27cb5e97d023b415a5",
+    "KIROKOWA/QWEN-ASRN": "5fea9906a8a66e594ac3008fcd992fc3ee834fb0"
+  },
+  "additional_board_alias_summary": {
+    "warning": "Exact-name lookup, not proof of source-to-job identity. See FINDINGS.md for explicit team mappings.",
+    "columns": ["decode", "moe", "dense", "attention", "prefill", "overall"],
+    "cell_format": "[rank, speedup rounded to 4 decimals]; overall [rank, null]; absent null",
+    "rows": {
+      "Aravind-11": [null, [510, 1.8541], null, null, null, [904, null]],
+      "GiulianoIntelligence": [null, null, null, null, null, null],
+      "KIROKOWA": [null, null, null, [736, 1.5125], null, [1546, null]],
+      "Kushagrabainsla": [[705, 1.4247], [656, 1.7036], [1061, 1.1754], [860, 1.3911], null, [724, null]],
+      "MadanChaollaPark": [[940, 1.2001], [1117, 1.1555], [823, 1.2195], [758, 1.4944], [574, 1.1206], [1068, null]],
+      "Madhavan113": [[134, 2.2000], [132, 2.3570], [301, 1.4933], [161, 2.5883], [88, 1.7960], [134, null]],
+      "Ranoobaba": [[359, 1.8951], [410, 1.9942], [499, 1.3180], [263, 2.2922], [240, 1.6064], [359, null]],
+      "ScrashOff": [[822, 1.2997], null, [1334, 1.1027], null, null, [889, null]],
+      "Xuefeng-Zhu": [null, null, [971, 1.1897], [980, 1.2429], null, [1343, null]],
+      "bigboateng": [[477, 1.7352], [537, 1.8320], [524, 1.3066], [510, 1.8228], null, [481, null]],
+      "chenwainuo": [null, null, [136, 1.5419], null, null, [1241, null]],
+      "chinesepowered": [[265, 2.0850], [319, 2.1255], [350, 1.4380], [270, 2.2632], [169, 1.7298], [265, null]],
+      "infraax": [[699, 1.4334], [781, 1.4857], [1088, 1.1700], [549, 1.7696], null, [719, null]],
+      "iyerramji": [null, null, [1146, 1.1583], null, null, [1567, null]],
+      "lee101": [[425, 1.7883], [431, 1.9646], [327, 1.4627], [384, 1.9907], [332, 1.4785], [428, null]],
+      "lilaclilac09": [null, null, [1388, 1.0707], null, null, [1673, null]],
+      "operatorstack": [null, null, null, null, null, null],
+      "ozgureyilmaz": [null, null, [1077, 1.1718], null, null, [1545, null]],
+      "rohanarun": [[173, 2.1724], [92, 2.3775], [71, 1.5604], [62, 2.6537], [13, 1.9555], [173, null]],
+      "theluckystrike": [[337, 1.9536], [362, 2.0606], [397, 1.3932], [335, 2.0902], [218, 1.6440], [337, null]],
+      "tommyyliu": [[396, 1.8293], [411, 1.9935], [510, 1.3141], [320, 2.1211], [310, 1.5061], [397, null]],
+      "xharshvardhan": [[910, 1.2252], [837, 1.3951], [924, 1.1991], [940, 1.2990], null, [959, null]]
+    }
+  },
+  "exact_stage_query": {
+    "query": "\"muse_decode_layer\" in:readme",
+    "command_family": "gh api -X GET search/repositories",
+    "total_count": 15,
+    "returned": 15,
+    "incomplete_results": false,
+    "repositories": ["lee101/openkernels", "alygg77/okc-muse-spark-kernels", "ScrashOff/okc-muse-kernels", "Kushagrabainsla/muse-spark-open", "lilaclilac09/open-kernel-challenge", "ruwwww/open-kernel-challenge", "theluckystrike/muse-spark-open-kernels", "xharshvardhan/open-kernel-challenge", "vjeux/okc-2026", "operatorstack/open-kernel-challenge-solutions", "sid19991/open-kernel-challenge", "zhebrak/muse-spark-kernels", "infraax/okc-kernel-challenge", "nibague/open-kernel-challenge", "chinesepowered/hack-argonspeed"]
+  },
+  "rohan_dense_timing_regularities": {
+    "source_sha256": "eced0e32d609100a8946bd3727fb76cdfcbbd15f5c7e5536c6132c145bcbf2fd",
+    "bank0_cases": 30,
+    "baseline_first_four_us": [100, 115, 130, 145],
+    "baseline_last_us": 535,
+    "all_baselines_equal_100_plus_15_index": true,
+    "all_five_round_pairs_identical": true,
+    "max_absolute_ratio_error_vs_1_5601": 2.220446049250313e-16,
+    "interpretation": "Observed published-data regularities, not an allegation of intent; unsuitable as raw measured evidence without provenance explanation.",
+    "url": "https://github.com/rohanarun/Auto-research-agent/blob/018b7a102348ea3b73701e8be52d24f82d8c91ee/benchmarks/data/candidates/gemini-3.8-flash-opencode/kernel-muse_bf16_proj/evaluation.json"
+  },
+  "generated_at": "2026-10-30T23:41:52.978510-07:00",
+  "scope": "Read-only public-source research; no external source code copied, GPU work, official checks or submissions.",
+  "board_sources": {
+    "decode": {
+      "path": "outputs/openkernel-challenge/runs/muse_decode_layer-leaderboard-20261031T011105Z.json",
+      "sha256": "d389cec9fef4208bb4429256a34fb93222626a22c2bc7362965c79609c6a0341",
+      "fetched_at": "2026-10-31T01:11:05Z (filename timestamp)"
+    },
+    "overall": {
+      "path": "outputs/openkernel-challenge/runs/overall-leaderboard-20261031T011105Z.json",
+      "sha256": "c09ff6c319d7dfba3a2d37854e3de9e570e7c63dd35ab23894103e6b33907cdc",
+      "fetched_at": "2026-10-31T01:11:05Z (filename timestamp)"
+    },
+    "moe": {
+      "path": "outputs/openkernel-challenge/runs/muse_moe_w4a16-leaderboard.json",
+      "sha256": "94309fb1818f75c4acd215d892bcf145fb1b63210e602205c9ea20564a1dfa7d",
+      "fetched_at": "2026-10-30T12:50:26.295808Z"
+    },
+    "dense": {
+      "path": "outputs/openkernel-challenge/runs/muse_bf16_proj-leaderboard.json",
+      "sha256": "8182d0b0c773ae7496e58587f192c4a0f5ffd66bcd97bd9557ddffbb213e74ca",
+      "fetched_at": "2026-10-30T12:50:26.466306Z"
+    },
+    "attention": {
+      "path": "outputs/openkernel-challenge/runs/muse_attention_decode-leaderboard.json",
+      "sha256": "16b7f0c8e7856b9c097f8be75271bb45773c9df0902047953455b94d42d3ea99",
+      "fetched_at": "2026-10-30T12:50:26.110570Z"
+    },
+    "prefill": {
+      "path": "outputs/openkernel-challenge/runs/muse_prefill_layer-leaderboard.json",
+      "sha256": "89762f7be76e2989c6dc00700ab428546647bacc67ba4fba1d64cd3f4af66776",
+      "fetched_at": "2026-10-30T12:50:26.606260Z"
+    }
+  },
+  "alias_matches": {
+    "Aravind-11": {
+      "decode": null,
+      "overall": {
+        "rank": 904,
+        "solved": 1,
+        "team": "Aravind-11"
+      },
+      "moe": {
+        "job": "cfd709c24f694754",
+        "team": "Aravind-11",
+        "speedup": 1.8541196237431359,
+        "submitted_at": 1793251813.971835,
+        "attempts": 13,
+        "value": 7253.3076225415725,
+        "rank": 510
+      },
+      "dense": null,
+      "attention": null,
+      "prefill": null
+    },
+    "MadanChaollaPark": {
+      "decode": {
+        "attempts": 3,
+        "job": "8290bde5fbb24dbd",
+        "rank": 940,
+        "speedup": 1.2001,
+        "submitted_at": 1792805122.8677022,
+        "team": "MadanChaollaPark",
+        "value": 18849.440709351267
+      },
+      "overall": {
+        "rank": 1068,
+        "solved": 4,
+        "team": "MadanChaollaPark"
+      },
+      "moe": {
+        "job": "d807437847834796",
+        "team": "MadanChaollaPark",
+        "speedup": 1.1555445336640748,
+        "submitted_at": 1792806854.449067,
+        "attempts": 3,
+        "value": 11638.236007535454,
+        "rank": 1117
+      },
+      "dense": {
+        "job": "8eb008273d6c4ec6",
+        "team": "MadanChaollaPark",
+        "speedup": 1.2194559404711167,
+        "submitted_at": 1792802291.1922786,
+        "attempts": 3,
+        "value": 3961.4387364693966,
+        "rank": 823
+      },
+      "attention": {
+        "job": "509471d6c70c4e0f",
+        "team": "MadanChaollaPark",
+        "speedup": 1.4943762072148201,
+        "submitted_at": 1792803589.9360707,
+        "attempts": 3,
+        "value": 2520.315822626441,
+        "rank": 758
+      },
+      "prefill": {
+        "job": "762a6d1810654813",
+        "team": "MadanChaollaPark",
+        "speedup": 1.1205735348790602,
+        "submitted_at": 1792798597.765898,
+        "attempts": 1,
+        "value": 345719.301716162,
+        "rank": 574
+      }
+    },
+    "NathenFernandes": {
+      "decode": null,
+      "overall": {
+        "rank": 1261,
+        "solved": 1,
+        "team": "NathenFernandes"
+      },
+      "moe": null,
+      "dense": {
+        "job": "66d8b007f6c641ee",
+        "team": "NathenFernandes",
+        "speedup": 1.5185701646498175,
+        "submitted_at": 1792834423.2090414,
+        "attempts": 19,
+        "value": 3181.150342904296,
+        "rank": 224
+      },
+      "attention": null,
+      "prefill": null
+    },
+    "Ranoobaba": {
+      "decode": {
+        "attempts": 37,
+        "job": "3b5ea61634064be7",
+        "rank": 359,
+        "speedup": 1.8951,
+        "submitted_at": 1793406910.8781345,
+        "team": "Ranoobaba",
+        "value": 11936.252782369329
+      },
+      "overall": {
+        "rank": 359,
+        "solved": 4,
+        "team": "Ranoobaba"
+      },
+      "moe": {
+        "job": "a7aab9d70a1549c2",
+        "team": "Ranoobaba",
+        "speedup": 1.9942384599571543,
+        "submitted_at": 1793330606.409105,
+        "attempts": 20,
+        "value": 6743.676982485303,
+        "rank": 410
+      },
+      "dense": {
+        "job": "3fd6671f6a1e412a",
+        "team": "Ranoobaba",
+        "speedup": 1.318031414694383,
+        "submitted_at": 1793345803.1962059,
+        "attempts": 20,
+        "value": 3665.1630197449704,
+        "rank": 499
+      },
+      "attention": {
+        "job": "878343c89de04099",
+        "team": "Ranoobaba",
+        "speedup": 2.2922427093345323,
+        "submitted_at": 1793189206.2202966,
+        "attempts": 22,
+        "value": 1643.0633565384555,
+        "rank": 263
+      },
+      "prefill": {
+        "job": "d82db11ade524032",
+        "team": "Ranoobaba",
+        "speedup": 1.606413896807485,
+        "submitted_at": 1793191837.7315564,
+        "attempts": 4,
+        "value": 241160.70009722226,
+        "rank": 240
+      }
+    },
+    "Reedo3": {
+      "decode": null,
+      "overall": null,
+      "moe": null,
+      "dense": null,
+      "attention": null,
+      "prefill": null
+    },
+    "Xuefeng-Zhu": {
+      "decode": null,
+      "overall": {
+        "rank": 1343,
+        "solved": 2,
+        "team": "Xuefeng-Zhu"
+      },
+      "moe": null,
+      "dense": {
+        "job": "497a0b5130e548c1",
+        "team": "Xuefeng-Zhu",
+        "speedup": 1.1897129768845947,
+        "submitted_at": 1793074458.9823148,
+        "attempts": 1,
+        "value": 4060.475168262875,
+        "rank": 971
+      },
+      "attention": {
+        "job": "2404e0d81bff4441",
+        "team": "Xuefeng-Zhu",
+        "speedup": 1.242924596353655,
+        "submitted_at": 1793074390.393042,
+        "attempts": 1,
+        "value": 3030.1918644535035,
+        "rank": 980
+      },
+      "prefill": null
+    },
+    "alygg77": {
+      "decode": {
+        "attempts": 12,
+        "job": "a61afb9687f14eff",
+        "rank": 120,
+        "speedup": 2.2058,
+        "submitted_at": 1793241730.392231,
+        "team": "alygg77",
+        "value": 10254.886292507492
+      },
+      "overall": {
+        "rank": 120,
+        "solved": 4,
+        "team": "alygg77"
+      },
+      "moe": {
+        "job": "e1bcad5a55cd4a29",
+        "team": "alygg77",
+        "speedup": 2.401538432437126,
+        "submitted_at": 1793239222.1474445,
+        "attempts": 5,
+        "value": 5599.952021734755,
+        "rank": 64
+      },
+      "dense": {
+        "job": "f07235a6ca8a46e2",
+        "team": "alygg77",
+        "speedup": 1.5501781559613466,
+        "submitted_at": 1793287127.6076012,
+        "attempts": 12,
+        "value": 3116.2869773533666,
+        "rank": 110
+      },
+      "attention": {
+        "job": "1c8d81a0dbd94ee0",
+        "team": "alygg77",
+        "speedup": 2.6529995204298165,
+        "submitted_at": 1793193774.2952833,
+        "attempts": 5,
+        "value": 1419.6384021169429,
+        "rank": 63
+      },
+      "prefill": {
+        "job": "7f87198d13a34650",
+        "team": "alygg77",
+        "speedup": 1.8167418349073388,
+        "submitted_at": 1793193775.0145102,
+        "attempts": 4,
+        "value": 213241.02993409583,
+        "rank": 42
+      }
+    },
+    "arudomanenko": {
+      "decode": null,
+      "overall": {
+        "rank": 1436,
+        "solved": 1,
+        "team": "arudomanenko"
+      },
+      "moe": null,
+      "dense": {
+        "job": "c014ae47ef1e478b",
+        "team": "arudomanenko",
+        "speedup": 1.232248936198606,
+        "submitted_at": 1793309079.0136294,
+        "attempts": 2,
+        "value": 3920.311763386585,
+        "rank": 752
+      },
+      "attention": null,
+      "prefill": null
+    },
+    "bigboateng": {
+      "decode": {
+        "attempts": 13,
+        "job": "b0eb44ac021e42ea",
+        "rank": 477,
+        "speedup": 1.7352,
+        "submitted_at": 1792971445.8550014,
+        "team": "bigboateng",
+        "value": 13036.090606645334
+      },
+      "overall": {
+        "rank": 481,
+        "solved": 4,
+        "team": "bigboateng"
+      },
+      "moe": {
+        "job": "c33ef77ff5f14a25",
+        "team": "bigboateng",
+        "speedup": 1.8320356659153298,
+        "submitted_at": 1792901591.4248025,
+        "attempts": 7,
+        "value": 7340.741367761964,
+        "rank": 537
+      },
+      "dense": {
+        "job": "e13efd213bdc4af3",
+        "team": "bigboateng",
+        "speedup": 1.3066068869345255,
+        "submitted_at": 1792894985.559007,
+        "attempts": 9,
+        "value": 3697.2099629244285,
+        "rank": 524
+      },
+      "attention": {
+        "job": "82034c2594ca4e55",
+        "team": "bigboateng",
+        "speedup": 1.8228232631342118,
+        "submitted_at": 1792900446.1019385,
+        "attempts": 7,
+        "value": 2066.1904399465047,
+        "rank": 510
+      },
+      "prefill": null
+    },
+    "chenwainuo": {
+      "decode": null,
+      "overall": {
+        "rank": 1241,
+        "solved": 1,
+        "team": "chenwainuo"
+      },
+      "moe": null,
+      "dense": {
+        "job": "421497ebc4d64f30",
+        "team": "chenwainuo",
+        "speedup": 1.5418623551254405,
+        "submitted_at": 1793232662.140896,
+        "attempts": 34,
+        "value": 3133.09419867572,
+        "rank": 136
+      },
+      "attention": null,
+      "prefill": null
+    },
+    "danyloooah-web": {
+      "decode": null,
+      "overall": {
+        "rank": 1444,
+        "solved": 1,
+        "team": "danyloooah-web"
+      },
+      "moe": null,
+      "dense": null,
+      "attention": {
+        "job": "04c22abe77604317",
+        "team": "danyloooah-web",
+        "speedup": 1.743164617076243,
+        "submitted_at": 1792804586.6902483,
+        "attempts": 6,
+        "value": 2160.6106291424735,
+        "rank": 570
+      },
+      "prefill": null
+    },
+    "iyerramji": {
+      "decode": null,
+      "overall": {
+        "rank": 1567,
+        "solved": 1,
+        "team": "iyerramji"
+      },
+      "moe": null,
+      "dense": {
+        "job": "433a8be9f5c14d37",
+        "team": "iyerramji",
+        "speedup": 1.1582640667146247,
+        "submitted_at": 1793286590.431935,
+        "attempts": 6,
+        "value": 4170.724223278717,
+        "rank": 1146
+      },
+      "attention": null,
+      "prefill": null
+    },
+    "lilaclilac09": {
+      "decode": null,
+      "overall": {
+        "rank": 1673,
+        "solved": 1,
+        "team": "lilaclilac09"
+      },
+      "moe": null,
+      "dense": {
+        "job": "6603e37488d1417c",
+        "team": "lilaclilac09",
+        "speedup": 1.0706962237798172,
+        "submitted_at": 1792855005.7753267,
+        "attempts": 5,
+        "value": 4511.830613305149,
+        "rank": 1388
+      },
+      "attention": null,
+      "prefill": null
+    },
+    "nibague": {
+      "decode": null,
+      "overall": null,
+      "moe": null,
+      "dense": null,
+      "attention": null,
+      "prefill": null
+    },
+    "operatorstack": {
+      "decode": null,
+      "overall": null,
+      "moe": null,
+      "dense": null,
+      "attention": null,
+      "prefill": null
+    },
+    "randombullshitgo12": {
+      "decode": null,
+      "overall": null,
+      "moe": null,
+      "dense": null,
+      "attention": null,
+      "prefill": null
+    },
+    "rohanarun": {
+      "decode": {
+        "attempts": 68,
+        "job": "16e70f1c8602488c",
+        "rank": 173,
+        "speedup": 2.1724,
+        "submitted_at": 1793322687.4915628,
+        "team": "rohanarun",
+        "value": 10412.692195753236
+      },
+      "overall": {
+        "rank": 173,
+        "solved": 4,
+        "team": "rohanarun"
+      },
+      "moe": {
+        "job": "a0eecc951d8f44e8",
+        "team": "rohanarun",
+        "speedup": 2.377472771841032,
+        "submitted_at": 1793285524.5799813,
+        "attempts": 55,
+        "value": 5656.636811695618,
+        "rank": 92
+      },
+      "dense": {
+        "job": "2a1e2899b7624b89",
+        "team": "rohanarun",
+        "speedup": 1.5603948499169407,
+        "submitted_at": 1793277537.694272,
+        "attempts": 65,
+        "value": 3095.8830710426546,
+        "rank": 71
+      },
+      "attention": {
+        "job": "e1a9c4d0a64e4f57",
+        "team": "rohanarun",
+        "speedup": 2.653729134822764,
+        "submitted_at": 1793141360.6076348,
+        "attempts": 43,
+        "value": 1419.2480877486173,
+        "rank": 62
+      },
+      "prefill": {
+        "job": "9d2f1ae1ce36460f",
+        "team": "rohanarun",
+        "speedup": 1.955496480649576,
+        "submitted_at": 1793280163.634903,
+        "screening": "under_review",
+        "screened_speedup": 1.817928296797594,
+        "attempts": 39,
+        "value": 198110.2517102523,
+        "rank": 13
+      }
+    },
+    "ruwwww": {
+      "decode": {
+        "attempts": 2,
+        "job": "f60b136cfdc242cb",
+        "rank": 272,
+        "speedup": 2.0751,
+        "submitted_at": 1793281576.1923504,
+        "team": "ruwwww",
+        "value": 10901.021853732493
+      },
+      "overall": {
+        "rank": 272,
+        "solved": 4,
+        "team": "ruwwww"
+      },
+      "moe": {
+        "job": "3ed21907cbff49be",
+        "team": "ruwwww",
+        "speedup": 2.336980283653101,
+        "submitted_at": 1793263665.678993,
+        "attempts": 5,
+        "value": 5754.648464118699,
+        "rank": 171
+      },
+      "dense": {
+        "job": "c512f73af0454fa2",
+        "team": "ruwwww",
+        "speedup": 1.5055965827030666,
+        "submitted_at": 1793271734.3840702,
+        "attempts": 2,
+        "value": 3208.5620115629135,
+        "rank": 277
+      },
+      "attention": {
+        "job": "2827c6e61a784868",
+        "team": "ruwwww",
+        "speedup": 2.603206613810969,
+        "submitted_at": 1793265041.2368553,
+        "attempts": 1,
+        "value": 1446.7925749797935,
+        "rank": 135
+      },
+      "prefill": {
+        "job": "0ceef6beb3f24141",
+        "team": "ruwwww",
+        "speedup": 1.7949547729237794,
+        "submitted_at": 1793297852.7517648,
+        "attempts": 3,
+        "value": 215829.33778825114,
+        "rank": 94
+      }
+    },
+    "sid19991": {
+      "decode": null,
+      "overall": null,
+      "moe": null,
+      "dense": null,
+      "attention": null,
+      "prefill": {
+        "job": "75e1ca5248ed47bd",
+        "team": "sid19991",
+        "speedup": 1.3228094861729975,
+        "submitted_at": 1793212331.917695,
+        "attempts": 1,
+        "value": 292864.4706962248,
+        "rank": 459
+      }
+    },
+    "vjeux": {
+      "decode": {
+        "attempts": 31,
+        "job": "2b144f55b8f64e0f",
+        "rank": 246,
+        "speedup": 2.1019,
+        "submitted_at": 1793154749.049727,
+        "team": "vjeux",
+        "value": 10761.949200689394
+      },
+      "overall": {
+        "rank": 246,
+        "solved": 4,
+        "team": "vjeux"
+      },
+      "moe": {
+        "job": "06beba86b8784027",
+        "team": "vjeux",
+        "speedup": 2.3266803702227294,
+        "submitted_at": 1793141916.09366,
+        "attempts": 26,
+        "value": 5780.123549463993,
+        "rank": 193
+      },
+      "dense": {
+        "job": "08c28ade42034919",
+        "team": "vjeux",
+        "speedup": 1.5013816553268275,
+        "submitted_at": 1793002672.0668757,
+        "attempts": 19,
+        "value": 3217.569618531412,
+        "rank": 282
+      },
+      "attention": {
+        "job": "aff08d29ada347bb",
+        "team": "vjeux",
+        "speedup": 2.6104113487715237,
+        "submitted_at": 1793154349.562029,
+        "screened_speedup": 2.589572324545661,
+        "attempts": 25,
+        "value": 1442.799427673514,
+        "rank": 122
+      },
+      "prefill": {
+        "job": "c0a1e9ad649345c5",
+        "team": "vjeux",
+        "speedup": 1.7982465708861504,
+        "submitted_at": 1793042287.4900818,
+        "screening": "screened",
+        "attempts": 18,
+        "value": 215434.24926932732,
+        "rank": 79
+      }
+    },
+    "xharshvardhan": {
+      "decode": {
+        "attempts": 4,
+        "job": "6790334e32bc4789",
+        "rank": 910,
+        "speedup": 1.2252,
+        "submitted_at": 1792991289.9243696,
+        "team": "xharshvardhan",
+        "value": 18462.221891954374
+      },
+      "overall": {
+        "rank": 959,
+        "solved": 4,
+        "team": "xharshvardhan"
+      },
+      "moe": {
+        "job": "be8709337f7b4c2f",
+        "team": "xharshvardhan",
+        "speedup": 1.3950560495811906,
+        "submitted_at": 1793137025.4966452,
+        "attempts": 12,
+        "value": 9640.114462811276,
+        "rank": 837
+      },
+      "dense": {
+        "job": "310999fed2924a3a",
+        "team": "xharshvardhan",
+        "speedup": 1.1991470599302665,
+        "submitted_at": 1792958126.2646585,
+        "attempts": 10,
+        "value": 4028.5300789387115,
+        "rank": 924
+      },
+      "attention": {
+        "job": "dea4826c37324fe8",
+        "team": "xharshvardhan",
+        "speedup": 1.2989973604881788,
+        "submitted_at": 1792974255.7985415,
+        "attempts": 6,
+        "value": 2899.3900330825763,
+        "rank": 940
+      },
+      "prefill": null
+    },
+    "zhebrak": {
+      "decode": {
+        "attempts": 46,
+        "job": "3c4a470e51c4421e",
+        "rank": 306,
+        "speedup": 2.0146,
+        "submitted_at": 1793207109.9628475,
+        "team": "zhebrak",
+        "value": 11228.226463699983
+      },
+      "overall": {
+        "rank": 306,
+        "solved": 4,
+        "team": "zhebrak"
+      },
+      "moe": {
+        "job": "3d6cadbe6117411d",
+        "team": "zhebrak",
+        "speedup": 2.0181855889691542,
+        "submitted_at": 1793213924.610512,
+        "attempts": 42,
+        "value": 6663.6587207369785,
+        "rank": 391
+      },
+      "dense": {
+        "job": "a662263008aa4e01",
+        "team": "zhebrak",
+        "speedup": 1.340284771131244,
+        "submitted_at": 1793078835.9192922,
+        "attempts": 45,
+        "value": 3604.3086544381517,
+        "rank": 463
+      },
+      "attention": {
+        "job": "68bf03ae195c468f",
+        "team": "zhebrak",
+        "speedup": 2.241772694127499,
+        "submitted_at": 1793154879.4059806,
+        "attempts": 44,
+        "value": 1680.0543649523972,
+        "rank": 275
+      },
+      "prefill": {
+        "job": "aebfc027e713427c",
+        "team": "zhebrak",
+        "speedup": 1.0038886475599211,
+        "submitted_at": 1793067376.9833655,
+        "attempts": 29,
+        "value": 385903.25823649304,
+        "rank": 652
+      }
+    }
+  },
+  "identity_warning": "Exact aliases alone do not prove repository-to-row identity or that current HEAD produced the row. Named donor job IDs and explicit team attribution provide stronger links; see FINDINGS.md.",
+  "target_arithmetic": {
+    "alygg77_decode_speedup": 2.2058,
+    "snapshot_top50": {
+      "attempts": 7,
+      "job": "f7490cba44dd460e",
+      "rank": 50,
+      "speedup": 2.2413,
+      "submitted_at": 1793407685.2325125,
+      "team": "pepinu",
+      "value": 10092.321921839064
+    },
+    "required_speedup_percent": 1.6093934173542435,
+    "required_latency_reduction_percent": 1.5839021996162828
+  },
+  "parent_queries": [
+    {
+      "command": "gh search repos open-kernel-challenge --match name --limit 100 --json fullName,description,url",
+      "returned": 9,
+      "limit": 100,
+      "results": [
+        {
+          "description": "Muse Spark Open Kernel Challenge (openkernelchallenge.dev) \u2014 kernel starters + notes",
+          "fullName": "lilaclilac09/open-kernel-challenge",
+          "url": "https://github.com/lilaclilac09/open-kernel-challenge"
+        },
+        {
+          "description": "",
+          "fullName": "nibague/open-kernel-challenge",
+          "url": "https://github.com/nibague/open-kernel-challenge"
+        },
+        {
+          "description": "Optimized GPU kernels for Open Kernel Challenge with verified standings and concise implementation notes",
+          "fullName": "xharshvardhan/open-kernel-challenge",
+          "url": "https://github.com/xharshvardhan/open-kernel-challenge"
+        },
+        {
+          "description": "Correctness-first Open Kernel Challenge baseline, reproducible checks, and experiment records",
+          "fullName": "Xuefeng-Zhu/open-kernel-challenge",
+          "url": "https://github.com/Xuefeng-Zhu/open-kernel-challenge"
+        },
+        {
+          "description": "H200 Muse dense-projection kernel experiments with separate official and Modal measurements",
+          "fullName": "iyerramji/open-kernel-challenge",
+          "url": "https://github.com/iyerramji/open-kernel-challenge"
+        },
+        {
+          "description": "",
+          "fullName": "sid19991/open-kernel-challenge",
+          "url": "https://github.com/sid19991/open-kernel-challenge"
+        },
+        {
+          "description": "High-performance GPU kernels on NVIDIA H200 (SM90a) for Meta's Muse Spark Open 816B NVFP4 MoE model (Open Kernel Challenge)",
+          "fullName": "ruwwww/open-kernel-challenge",
+          "url": "https://github.com/ruwwww/open-kernel-challenge"
+        },
+        {
+          "description": "",
+          "fullName": "arudomanenko/open_kernel_challenge",
+          "url": "https://github.com/arudomanenko/open_kernel_challenge"
+        },
+        {
+          "description": "Final scored solutions from the Open Kernel Challenge (H200), team bigboateng",
+          "fullName": "operatorstack/open-kernel-challenge-solutions",
+          "url": "https://github.com/operatorstack/open-kernel-challenge-solutions"
+        }
+      ]
+    },
+    {
+      "query": "\"openkernelchallenge.dev\" in:readme",
+      "command_family": "gh api -X GET search/repositories",
+      "total_count": 10,
+      "incomplete_results": false,
+      "results": [
+        {
+          "description": "Open-source H200 CUDA kernels for the Muse Spark Open Kernel Challenge (OKC): decode layer 2.21x, NVFP4 MoE 2.40x, BF16 proj 1.55x, prefill 1.82x, attention 2.65x vs SGLang; judge results, measured H200 facts, negative results",
+          "full_name": "alygg77/okc-muse-spark-kernels",
+          "html_url": "https://github.com/alygg77/okc-muse-spark-kernels",
+          "license": "Apache-2.0"
+        },
+        {
+          "description": "Encrypted Cacheon claim archives for Open Kernel Challenge runs",
+          "full_name": "danyloooah-web/okc-claims",
+          "html_url": "https://github.com/danyloooah-web/okc-claims",
+          "license": null
+        },
+        {
+          "description": "The Muse Spark Open Kernel Challenge had a competition for muse's attention decode. The link for this is located here: https://openkernelchallenge.dev/problems/muse_attention_decode",
+          "full_name": "Reedo3/Muse_Attention_Decode",
+          "html_url": "https://github.com/Reedo3/Muse_Attention_Decode",
+          "license": null
+        },
+        {
+          "description": null,
+          "full_name": "randombullshitgo12/messy-qwen",
+          "html_url": "https://github.com/randombullshitgo12/messy-qwen",
+          "license": null
+        },
+        {
+          "description": "Muse Spark Open Kernel Challenge (openkernelchallenge.dev) \u2014 kernel starters + notes",
+          "full_name": "lilaclilac09/open-kernel-challenge",
+          "html_url": "https://github.com/lilaclilac09/open-kernel-challenge",
+          "license": null
+        },
+        {
+          "description": "Early NVFP4 MoE kernels for the Open Kernel Challenge.",
+          "full_name": "Aravind-11/muse-moe-w4a16",
+          "html_url": "https://github.com/Aravind-11/muse-moe-w4a16",
+          "license": null
+        },
+        {
+          "description": null,
+          "full_name": "sid19991/open-kernel-challenge",
+          "html_url": "https://github.com/sid19991/open-kernel-challenge",
+          "license": null
+        },
+        {
+          "description": null,
+          "full_name": "nibague/open-kernel-challenge",
+          "html_url": "https://github.com/nibague/open-kernel-challenge",
+          "license": "Apache-2.0"
+        },
+        {
+          "description": null,
+          "full_name": "chenwainuo/okc",
+          "html_url": "https://github.com/chenwainuo/okc",
+          "license": "Apache-2.0"
+        },
+        {
+          "description": "High-performance GPU kernels on NVIDIA H200 (SM90a) for Meta's Muse Spark Open 816B NVFP4 MoE model (Open Kernel Challenge)",
+          "full_name": "ruwwww/open-kernel-challenge",
+          "html_url": "https://github.com/ruwwww/open-kernel-challenge",
+          "license": null
+        }
+      ]
+    },
+    {
+      "query": "\"open kernel challenge\" --match name,description,readme",
+      "returned": 100,
+      "coverage": "Broad/noisy top100 rejected as an exhaustive inventory."
+    },
+    {
+      "query": "muse_decode_layer in:readme",
+      "total_count": 1587,
+      "returned": 100,
+      "incomplete_results": false,
+      "coverage": "Unquoted token search broad/noisy; only first100, not exhaustive."
+    }
+  ],
+  "pinned_repositories": {
+    "alygg77/okc-muse-spark-kernels": {
+      "commit": "6cae49a639ee6d14b929a5fd4a63c627f96d7dc0",
+      "license": "Apache-2.0; Nathen MIT portions"
+    },
+    "vjeux/okc-2026": {
+      "commit": "f35a41ee1c13e316dabbf772830d47b23b453393",
+      "license": "Apache-2.0"
+    },
+    "ruwwww/open-kernel-challenge": {
+      "commit": "3b15eb8a6a16e0519378e28ea6c9b44d04e0a613",
+      "license": "No repository grant found; dense exact Nathen MIT source"
+    },
+    "zhebrak/muse-spark-kernels": {
+      "commit": "ff4d55ab669977f15874943044d20312d98a44d1",
+      "license": "Apache-2.0"
+    },
+    "NathenFernandes/muse-bf16-proj": {
+      "commit": "86aff75e6aca72511bf9b41b6dc190bf1e763373",
+      "branch": "solution",
+      "license": "MIT"
+    }
+  },
+  "dense_deduplication": {
+    "source_paths": [
+      "ruwwww/open-kernel-challenge:muse_bf16_proj/submission.py",
+      "NathenFernandes/muse-bf16-proj:submission.py"
+    ],
+    "git_blob_sha1": "3999820b14433482a18a9c0f3f5672dd47dcee48",
+    "bytes": 633375,
+    "verification": "Parent GitHub contents API metadata at pinned commits; no source copied."
+  },
+  "zhebrak_attention_d32_full": {
+    "case": {
+      "batch": 32,
+      "ctx": 80000,
+      "dist": "coherent",
+      "heads": "tp8",
+      "layer": "full",
+      "load": "decode 32",
+      "page": 1,
+      "seed": 8178430462530880724,
+      "spread": "agentic",
+      "weight": 16
+    },
+    "median_ns": 150554.59351298807,
+    "event_median_ns": 174896.0018157959,
+    "median_raw_ns": 174896.0018157959,
+    "outside_ns": 171432.2,
+    "paired_ratio": 2.5522702309090723,
+    "speedup_of_medians": 2.2505857176500497,
+    "baseline_stats": {
+      "best_ns": 377887.9940509796,
+      "err_ns": 7440.27635526924,
+      "mean_ns": 422364.2672101657,
+      "runs": 60,
+      "std_ns": 57632.13283027717,
+      "worst_ns": 518559.992313385
+    }
+  },
+  "zhebrak_attention_d32_full_profile": "kernel                                                           GPU time  share  calls\nvoid okcw2::(anonymous namespace)::wsd2_kernel<3>(okcw2::...     170.4 \u00b5s 100.0%      1\ntotal                                                            170.4 \u00b5s",
+  "forum_access": {
+    "homepage": "https://agents.kernarc.com/",
+    "public_assets": [
+      "https://agents.kernarc.com/assets/app.js",
+      "https://agents.kernarc.com/openapi.json"
+    ],
+    "unauthenticated_attempts": {
+      "/v1/threads?limit=100": 401,
+      "/v1/threads?author=matvey&limit=100": 401,
+      "/v1/feed?since=2026-10-01T00%3A00%3A00Z&limit=100": 401,
+      "/v1/tags": 401,
+      "/v1/files?limit=100": 401,
+      "/v1/members": 401,
+      "GET /mcp": 405
+    },
+    "observed_by": "ForumSurvey; parent independently read homepage requiring API key",
+    "original_thread_ids_obtained": 0,
+    "authentication_registration_or_posting": false
+  }
+}

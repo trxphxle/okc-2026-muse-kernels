@@ -1,0 +1,544 @@
+{
+  "source_report": "outputs/openkernel-challenge/modal-lab/layer-okc-h200-attn-overlap-03/round2-latency.json",
+  "derived_only": true,
+  "cases": {
+    "D1f": {
+      "timing_us": {
+        "native": {
+          "n": 48,
+          "min": 14.976000413298607,
+          "median": 15.39199985563755,
+          "p10": 15.00799972563982,
+          "p90": 15.625599771738052,
+          "max": 15.744000673294067,
+          "max_minus_median": 0.35200081765651703
+        },
+        "native_repeat": {
+          "n": 48,
+          "min": 14.976000413298607,
+          "median": 15.32800029963255,
+          "p10": 15.126399975270033,
+          "p90": 15.721600502729416,
+          "max": 16.48000068962574,
+          "max_minus_median": 1.1520003899931908
+        },
+        "prologue": {
+          "n": 48,
+          "min": 15.072000212967396,
+          "median": 15.615999698638916,
+          "p10": 15.359999611973763,
+          "p90": 15.859199687838554,
+          "max": 17.24799908697605,
+          "max_minus_median": 1.6319993883371353
+        },
+        "tail": {
+          "n": 48,
+          "min": 14.976000413298607,
+          "median": 15.359999611973763,
+          "p10": 15.126399975270033,
+          "p90": 15.603200253099203,
+          "max": 16.3199994713068,
+          "max_minus_median": 0.9599998593330383
+        }
+      },
+      "aa_ratio_repeat_over_native": {
+        "n": 48,
+        "min": 0.9610655747481803,
+        "median": 1.0020920661314525,
+        "p10": 0.9699979068962675,
+        "p90": 1.0329562890152566,
+        "max": 1.0641025529406747,
+        "max_minus_median": 0.062010486809222165
+      },
+      "aa_within_one_percent": true,
+      "native_launch_metadata": [
+        {
+          "name": "void (anonymous namespace)::attn_kernel<1, false, 11>((anonymous namespace)::Params)",
+          "args": {
+            "queued": 0,
+            "device": 0,
+            "context": 1,
+            "stream": 7,
+            "correlation": 3,
+            "registers per thread": 126,
+            "shared memory": 58368,
+            "blocks per SM": 1.9090908765792847,
+            "warps per SM": 7.636363506317139,
+            "grid": [
+              252,
+              1,
+              1
+            ],
+            "block": [
+              128,
+              1,
+              1
+            ],
+            "est. achieved occupancy %": 0,
+            "occupancy": {
+              "activeBlocksPerMultiprocessor": 0,
+              "limitingFactors": "SMEM",
+              "blockLimitRegs": 4,
+              "blockLimitSharedMem": 0,
+              "blockLimitWarps": 16,
+              "blockLimitBlocks": 32,
+              "blockLimitBarriers": 2147483647,
+              "allocatedRegistersPerBlock": 16384,
+              "allocatedSharedMemPerBlock": 59392
+            },
+            "graph id": 14,
+            "graph node id": 60129542145,
+            "channel": 6,
+            "channel_type": 1
+          }
+        }
+      ],
+      "instrumentation": {
+        "prologue": {
+          "paired_ratio_over_native_mean": {
+            "n": 48,
+            "min": 0.9681397711284383,
+            "median": 1.0165460872900156,
+            "p10": 0.9952222012456713,
+            "p90": 1.0410094395872262,
+            "max": 1.1182571950163132,
+            "max_minus_median": 0.10171110772629754
+          },
+          "materially_perturbed": false,
+          "native_duration_ratio_over_control_mean": 1.0073553525415788,
+          "local_memory_or_noncoop": false,
+          "native_trace_comparison": {
+            "native_symbols": [
+              "void (anonymous namespace)::attn_kernel<1, false, 11>((anonymous namespace)::Params)"
+            ],
+            "instrumented_symbols": [
+              "void (anonymous namespace)::attn_kernel<1, false, 11>((anonymous namespace)::Params)"
+            ],
+            "instrumented_launch_args": [
+              {
+                "queued": 0,
+                "device": 0,
+                "context": 1,
+                "stream": 7,
+                "correlation": 479,
+                "registers per thread": 130,
+                "shared memory": 58368,
+                "blocks per SM": 1.9090908765792847,
+                "warps per SM": 7.636363506317139,
+                "grid": [
+                  252,
+                  1,
+                  1
+                ],
+                "block": [
+                  128,
+                  1,
+                  1
+                ],
+                "est. achieved occupancy %": 0,
+                "occupancy": {
+                  "activeBlocksPerMultiprocessor": 0,
+                  "limitingFactors": "SMEM",
+                  "blockLimitRegs": 3,
+                  "blockLimitSharedMem": 0,
+                  "blockLimitWarps": 16,
+                  "blockLimitBlocks": 32,
+                  "blockLimitBarriers": 2147483647,
+                  "allocatedRegistersPerBlock": 17408,
+                  "allocatedSharedMemPerBlock": 59392
+                },
+                "graph id": 20,
+                "graph node id": 85899345921,
+                "channel": 6,
+                "channel_type": 1
+              }
+            ],
+            "same_kernel_instances": true
+          },
+          "interpretation": "sparse landmarks within timing gate; source scheduling and cross-CTA caveats still apply",
+          "stamped_envelope_us": {
+            "n": 12,
+            "min": 9.792,
+            "median": 9.952,
+            "p10": 9.856,
+            "p90": 10.201600000000001,
+            "max": 11.424,
+            "max_minus_median": 1.4719999999999995
+          },
+          "last_loop_to_last_completion_us": {
+            "n": 12,
+            "min": 2.368,
+            "median": 2.592,
+            "p10": 2.3775999999999997,
+            "p90": 2.7807999999999997,
+            "max": 2.976,
+            "max_minus_median": 0.3839999999999999
+          }
+        },
+        "tail": {
+          "paired_ratio_over_native_mean": {
+            "n": 48,
+            "min": 0.9669421678932016,
+            "median": 1.0005202801756976,
+            "p10": 0.9841520490813425,
+            "p90": 1.0157986759261342,
+            "max": 1.029473694594386,
+            "max_minus_median": 0.028953414418688483
+          },
+          "materially_perturbed": false,
+          "native_duration_ratio_over_control_mean": 0.9895525884282034,
+          "local_memory_or_noncoop": false,
+          "native_trace_comparison": {
+            "native_symbols": [
+              "void (anonymous namespace)::attn_kernel<1, false, 11>((anonymous namespace)::Params)"
+            ],
+            "instrumented_symbols": [
+              "void (anonymous namespace)::attn_kernel<1, false, 11>((anonymous namespace)::Params)"
+            ],
+            "instrumented_launch_args": [
+              {
+                "queued": 0,
+                "device": 0,
+                "context": 1,
+                "stream": 7,
+                "correlation": 720,
+                "registers per thread": 128,
+                "shared memory": 58368,
+                "blocks per SM": 1.9090908765792847,
+                "warps per SM": 7.636363506317139,
+                "grid": [
+                  252,
+                  1,
+                  1
+                ],
+                "block": [
+                  128,
+                  1,
+                  1
+                ],
+                "est. achieved occupancy %": 0,
+                "occupancy": {
+                  "activeBlocksPerMultiprocessor": 0,
+                  "limitingFactors": "SMEM",
+                  "blockLimitRegs": 4,
+                  "blockLimitSharedMem": 0,
+                  "blockLimitWarps": 16,
+                  "blockLimitBlocks": 32,
+                  "blockLimitBarriers": 2147483647,
+                  "allocatedRegistersPerBlock": 16384,
+                  "allocatedSharedMemPerBlock": 59392
+                },
+                "graph id": 23,
+                "graph node id": 98784247809,
+                "channel": 6,
+                "channel_type": 1
+              }
+            ],
+            "same_kernel_instances": true
+          },
+          "interpretation": "sparse landmarks within timing gate; source scheduling and cross-CTA caveats still apply",
+          "stamped_envelope_us": {
+            "n": 12,
+            "min": 9.792,
+            "median": 10.016,
+            "p10": 9.824,
+            "p90": 11.1968,
+            "max": 11.264,
+            "max_minus_median": 1.2479999999999993
+          },
+          "last_loop_to_last_completion_us": {
+            "n": 12,
+            "min": 2.08,
+            "median": 2.608,
+            "p10": 2.1056,
+            "p90": 2.8032,
+            "max": 2.848,
+            "max_minus_median": 0.23999999999999977
+          }
+        }
+      },
+      "public_reference_passed": true,
+      "guaranteed_removable_us": 0.0,
+      "limits": [
+        "No measured phase is proven removable: guaranteed realizable saving is 0 us; stage deletion was not performed.",
+        "Entry/page-index/KV intervals overlap query preparation and include address/control work, not isolated DRAM latency.",
+        "Per-CTA wait times overlap other CTAs' useful work; neither their sum nor median is an additive kernel cost.",
+        "Tail after last observed loop end is an optimistic whole-tail deletion envelope, not a legal implementation or an isolated merge cost.",
+        "End-spread max-minus-median is only a hypothetical balancing envelope; balancing is a closed negative experiment, not a proposal.",
+        "Source-level readback/norm/gate subdivisions may cross compiler scheduling and outstanding memory operations; no added fences serialize them.",
+        "Prologue and tail builds are separate executions. Never splice their individual rows into a claimed exact single-launch critical path.",
+        "CUPTI durations and globaltimer timestamps have different origins. Compare spans, not absolute timestamps.",
+        "If occupancy, launch mode or local-memory use changes, or paired timing shifts >3%, report biased stamps, not an accurate native critical path."
+      ]
+    },
+    "V1f": {
+      "timing_us": {
+        "native": {
+          "n": 48,
+          "min": 19.039999693632126,
+          "median": 19.42400075495243,
+          "p10": 19.231999292969704,
+          "p90": 19.680000841617584,
+          "max": 20.67199908196926,
+          "max_minus_median": 1.2479983270168304
+        },
+        "native_repeat": {
+          "n": 48,
+          "min": 19.007999449968338,
+          "median": 19.408000633120537,
+          "p10": 19.094400107860565,
+          "p90": 19.913600757718086,
+          "max": 20.447999238967896,
+          "max_minus_median": 1.0399986058473587
+        },
+        "prologue": {
+          "n": 48,
+          "min": 19.45599913597107,
+          "median": 19.999999552965164,
+          "p10": 19.79839988052845,
+          "p90": 20.35200037062168,
+          "max": 20.67199908196926,
+          "max_minus_median": 0.671999529004097
+        },
+        "tail": {
+          "n": 48,
+          "min": 19.392000511288643,
+          "median": 19.807999953627586,
+          "p10": 19.574400037527084,
+          "p90": 20.096000283956528,
+          "max": 20.8320003002882,
+          "max_minus_median": 1.024000346660614
+        }
+      },
+      "aa_ratio_repeat_over_native": {
+        "n": 48,
+        "min": 0.9349845628050327,
+        "median": 0.999173547437463,
+        "p10": 0.980253415333185,
+        "p90": 1.026637690801476,
+        "max": 1.042692978951574,
+        "max_minus_median": 0.04351943151411097
+      },
+      "aa_within_one_percent": true,
+      "native_launch_metadata": [
+        {
+          "name": "void (anonymous namespace)::attn_kernel<8, false, 11>((anonymous namespace)::Params)",
+          "args": {
+            "queued": 0,
+            "device": 0,
+            "context": 1,
+            "stream": 7,
+            "correlation": 61866,
+            "registers per thread": 111,
+            "shared memory": 94208,
+            "blocks per SM": 1.9090908765792847,
+            "warps per SM": 15.272727012634277,
+            "grid": [
+              252,
+              1,
+              1
+            ],
+            "block": [
+              256,
+              1,
+              1
+            ],
+            "est. achieved occupancy %": 0,
+            "occupancy": {
+              "activeBlocksPerMultiprocessor": 0,
+              "limitingFactors": "SMEM",
+              "blockLimitRegs": 2,
+              "blockLimitSharedMem": 0,
+              "blockLimitWarps": 8,
+              "blockLimitBlocks": 32,
+              "blockLimitBarriers": 2147483647,
+              "allocatedRegistersPerBlock": 28672,
+              "allocatedSharedMemPerBlock": 95232
+            },
+            "graph id": 62,
+            "graph node id": 266287972353,
+            "channel": 6,
+            "channel_type": 1
+          }
+        }
+      ],
+      "instrumentation": {
+        "prologue": {
+          "paired_ratio_over_native_mean": {
+            "n": 48,
+            "min": 0.9904000198185449,
+            "median": 1.0284541624465864,
+            "p10": 1.0102134492322394,
+            "p90": 1.0490228294562098,
+            "max": 1.0677685328619764,
+            "max_minus_median": 0.03931437041538999
+          },
+          "materially_perturbed": true,
+          "native_duration_ratio_over_control_mean": 1.0390245559216114,
+          "local_memory_or_noncoop": false,
+          "native_trace_comparison": {
+            "native_symbols": [
+              "void (anonymous namespace)::attn_kernel<8, false, 11>((anonymous namespace)::Params)"
+            ],
+            "instrumented_symbols": [
+              "void (anonymous namespace)::attn_kernel<8, false, 11>((anonymous namespace)::Params)"
+            ],
+            "instrumented_launch_args": [
+              {
+                "queued": 0,
+                "device": 0,
+                "context": 1,
+                "stream": 7,
+                "correlation": 62340,
+                "registers per thread": 113,
+                "shared memory": 94208,
+                "blocks per SM": 1.9090908765792847,
+                "warps per SM": 15.272727012634277,
+                "grid": [
+                  252,
+                  1,
+                  1
+                ],
+                "block": [
+                  256,
+                  1,
+                  1
+                ],
+                "est. achieved occupancy %": 0,
+                "occupancy": {
+                  "activeBlocksPerMultiprocessor": 0,
+                  "limitingFactors": "SMEM",
+                  "blockLimitRegs": 2,
+                  "blockLimitSharedMem": 0,
+                  "blockLimitWarps": 8,
+                  "blockLimitBlocks": 32,
+                  "blockLimitBarriers": 2147483647,
+                  "allocatedRegistersPerBlock": 30720,
+                  "allocatedSharedMemPerBlock": 95232
+                },
+                "graph id": 68,
+                "graph node id": 292057776129,
+                "channel": 6,
+                "channel_type": 1
+              }
+            ],
+            "same_kernel_instances": true
+          },
+          "interpretation": "biased source landmarks; no accurate native attribution",
+          "stamped_envelope_us": {
+            "n": 12,
+            "min": 14.24,
+            "median": 14.544,
+            "p10": 14.313600000000001,
+            "p90": 14.7744,
+            "max": 14.816,
+            "max_minus_median": 0.27200000000000024
+          },
+          "last_loop_to_last_completion_us": {
+            "n": 12,
+            "min": 2.784,
+            "median": 2.976,
+            "p10": 2.8192,
+            "p90": 3.0368,
+            "max": 3.264,
+            "max_minus_median": 0.2879999999999998
+          }
+        },
+        "tail": {
+          "paired_ratio_over_native_mean": {
+            "n": 48,
+            "min": 0.9854368762867731,
+            "median": 1.0214331785679156,
+            "p10": 0.9992592679890777,
+            "p90": 1.0381160080399545,
+            "max": 1.0440565718483357,
+            "max_minus_median": 0.022623393280420068
+          },
+          "materially_perturbed": false,
+          "native_duration_ratio_over_control_mean": 1.0106307101857828,
+          "local_memory_or_noncoop": false,
+          "native_trace_comparison": {
+            "native_symbols": [
+              "void (anonymous namespace)::attn_kernel<8, false, 11>((anonymous namespace)::Params)"
+            ],
+            "instrumented_symbols": [
+              "void (anonymous namespace)::attn_kernel<8, false, 11>((anonymous namespace)::Params)"
+            ],
+            "instrumented_launch_args": [
+              {
+                "queued": 0,
+                "device": 0,
+                "context": 1,
+                "stream": 7,
+                "correlation": 62581,
+                "registers per thread": 117,
+                "shared memory": 94208,
+                "blocks per SM": 1.9090908765792847,
+                "warps per SM": 15.272727012634277,
+                "grid": [
+                  252,
+                  1,
+                  1
+                ],
+                "block": [
+                  256,
+                  1,
+                  1
+                ],
+                "est. achieved occupancy %": 0,
+                "occupancy": {
+                  "activeBlocksPerMultiprocessor": 0,
+                  "limitingFactors": "SMEM",
+                  "blockLimitRegs": 2,
+                  "blockLimitSharedMem": 0,
+                  "blockLimitWarps": 8,
+                  "blockLimitBlocks": 32,
+                  "blockLimitBarriers": 2147483647,
+                  "allocatedRegistersPerBlock": 30720,
+                  "allocatedSharedMemPerBlock": 95232
+                },
+                "graph id": 71,
+                "graph node id": 304942678017,
+                "channel": 6,
+                "channel_type": 1
+              }
+            ],
+            "same_kernel_instances": true
+          },
+          "interpretation": "sparse landmarks within timing gate; source scheduling and cross-CTA caveats still apply",
+          "stamped_envelope_us": {
+            "n": 12,
+            "min": 14.112,
+            "median": 14.32,
+            "p10": 14.144,
+            "p90": 14.832,
+            "max": 15.488,
+            "max_minus_median": 1.1679999999999993
+          },
+          "last_loop_to_last_completion_us": {
+            "n": 12,
+            "min": 3.072,
+            "median": 3.168,
+            "p10": 3.136,
+            "p90": 3.2864,
+            "max": 3.36,
+            "max_minus_median": 0.19199999999999973
+          }
+        }
+      },
+      "public_reference_passed": true,
+      "guaranteed_removable_us": 0.0,
+      "limits": [
+        "No measured phase is proven removable: guaranteed realizable saving is 0 us; stage deletion was not performed.",
+        "Entry/page-index/KV intervals overlap query preparation and include address/control work, not isolated DRAM latency.",
+        "Per-CTA wait times overlap other CTAs' useful work; neither their sum nor median is an additive kernel cost.",
+        "Tail after last observed loop end is an optimistic whole-tail deletion envelope, not a legal implementation or an isolated merge cost.",
+        "End-spread max-minus-median is only a hypothetical balancing envelope; balancing is a closed negative experiment, not a proposal.",
+        "Source-level readback/norm/gate subdivisions may cross compiler scheduling and outstanding memory operations; no added fences serialize them.",
+        "Prologue and tail builds are separate executions. Never splice their individual rows into a claimed exact single-launch critical path.",
+        "CUPTI durations and globaltimer timestamps have different origins. Compare spans, not absolute timestamps.",
+        "If occupancy, launch mode or local-memory use changes, or paired timing shifts >3%, report biased stamps, not an accurate native critical path."
+      ]
+    }
+  }
+}

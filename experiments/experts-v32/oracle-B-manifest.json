@@ -1,0 +1,147 @@
+{
+  "mode": "B",
+  "diagnostic_only": true,
+  "never_submit": true,
+  "numerically_valid": false,
+  "baseline_sha256": "053dbacc8f0de4e6111ccb89cb91f629840852cf482a6ca423fe0eaff419c086",
+  "oracle_sha256": "15ac798ebe757774b52b36a94879a7faf1c14e4db2fa80bbfefe984afbc1d726",
+  "literal_style": "r\"\"\"",
+  "unchanged_outside_literal_and_first_marker_sha256": "def164b27f4243d699d598ea99c81efe6af66f7c033e3863d289e1d842ddc7f3",
+  "edits": [
+    {
+      "name": "phase_b_doneAs_acquire",
+      "cuda_start": 97898,
+      "cuda_end": 98114,
+      "removed_sha256": "01463119321b5c77a05aeb795cbb8a26be33085bcbea9e73f89abfdadd0324f8",
+      "replacement": ""
+    },
+    {
+      "name": "pending_protocol_comment",
+      "cuda_start": 101098,
+      "cuda_end": 101436,
+      "removed_sha256": "fe5a7227a128f7311e772e0232aee97de2b49c56ce6c68d3d10375bbbe03ad72",
+      "replacement": "// Diagnostic pending state: only ordinary kind-1 readiness is used by A; B leaves this state idle.\n"
+    },
+    {
+      "name": "all_unit_epilogue_and_flush_definitions",
+      "cuda_start": 101480,
+      "cuda_end": 107099,
+      "removed_sha256": "556e891151287ca44ba73ef65935c7d8ed678890972c8f96405eaf6ee4664e7a",
+      "replacement": ""
+    },
+    {
+      "name": "deferred_result_flush",
+      "cuda_start": 111579,
+      "cuda_end": 111883,
+      "removed_sha256": "5f3956c8942db23f2ea7e8797ab01b4897b26e9e8061956978fda510d20c547c",
+      "replacement": ""
+    },
+    {
+      "name": "split_publish_and_contributor_protocol",
+      "cuda_start": 112179,
+      "cuda_end": 112873,
+      "removed_sha256": "a30b5fd9f7ccd94c421832f7c7b7ead81bb13a6a4eb1f404cea7b2231e5ff780",
+      "replacement": ""
+    },
+    {
+      "name": "ordinary_unit_epilogue_and_readiness",
+      "cuda_start": 112873,
+      "cuda_end": 113145,
+      "removed_sha256": "0519158746ed7eed95f0888b0124ece373dd3ca62909385c818649dee075b4a3",
+      "replacement": "}\n"
+    },
+    {
+      "name": "split_fixup_mapping",
+      "cuda_start": 113856,
+      "cuda_end": 114052,
+      "removed_sha256": "bb03a43ae527da12f866dfcc7be71ace3f8c43f27a9805ba04ab4ced8a3fcdcc",
+      "replacement": "    const int slot = (s1 - s0 == 16) ? -1 : 0;  // diagnostic split marker, no fixup mapping\n"
+    },
+    {
+      "name": "phase_tail_result_flush",
+      "cuda_start": 114748,
+      "cuda_end": 114775,
+      "removed_sha256": "a3bbde9f4a26b5808f4b4ab49f553e9197b72a873b1f1c3427a29fb6c4706179",
+      "replacement": ""
+    },
+    {
+      "name": "doneAs_reset",
+      "cuda_start": 130386,
+      "cuda_end": 130452,
+      "removed_sha256": "c57c567b0d91c24535b0126c93310919a1e279f6c32be8b78702e1381dcbfd49",
+      "replacement": ""
+    }
+  ],
+  "unchanged_sections": {
+    "routing_layouts_scratch_cost_tables_order": {
+      "baseline_sha256": "62ecd7e09535e6c4679e8e17afc38920c69f273a93a93dd9519fca73a8fd3a74",
+      "oracle_sha256": "62ecd7e09535e6c4679e8e17afc38920c69f273a93a93dd9519fca73a8fd3a74",
+      "bytes": 94769,
+      "excluded_removed_blocks": []
+    },
+    "weight_producer": {
+      "baseline_sha256": "2296e5f53b80508bd9c1fbb9ac639d5f4b09c818376c0b0594ca68ac3fa296c0",
+      "oracle_sha256": "2296e5f53b80508bd9c1fbb9ac639d5f4b09c818376c0b0594ca68ac3fa296c0",
+      "bytes": 1715,
+      "excluded_removed_blocks": []
+    },
+    "x_producer": {
+      "baseline_sha256": "11a7a9f8162a87c1921f8aadafb87ca105718fae419a59aa59b79ebf095dc381",
+      "oracle_sha256": "11a7a9f8162a87c1921f8aadafb87ca105718fae419a59aa59b79ebf095dc381",
+      "bytes": 2169,
+      "excluded_removed_blocks": [
+        "      // phase B stage st reads inter columns 256 st .. +255: the 2 phase-A units (x 4 warpgroups) that wrote them\n      if (pb && !(OKC_WGSX & 8)) { while (ld_acquire(p.doneAs + j * 16 + st) < 8) __nanosleep(32); }\n"
+      ]
+    },
+    "gather": {
+      "baseline_sha256": "5445c5dd08b9a2f76e48e0f0bfebae88e6558f0115caece87df2daf0bc82a0a9",
+      "oracle_sha256": "5445c5dd08b9a2f76e48e0f0bfebae88e6558f0115caece87df2daf0bc82a0a9"
+    },
+    "K_dequant_WGMMA_weight_and_x_slot_pipeline": {
+      "baseline_sha256": "d6c2a501dc37c6a5ad403c8fb2ac4ff027ec2871fe87d4857e3ce8abd70af8a4",
+      "oracle_sha256": "d6c2a501dc37c6a5ad403c8fb2ac4ff027ec2871fe87d4857e3ce8abd70af8a4",
+      "bytes": 4518,
+      "excluded_removed_blocks": [
+        "        // the previous segment's deferred work, behind group OKC_WGSFCI of the first stage (scout: CI 3 lets this WG's\n        // own red.adds / epilogue stores drain a little longer before the count / release atomics: +0.5-1%)\n        if (FIRST && ci == OKC_WGSFCI && pd.kind) wgs_flush<PB>(p, S, pd);\n"
+      ]
+    },
+    "mandatory_drain_and_x_release": {
+      "baseline_sha256": "6608815603cdbf4b1ddb595e6aa7e50f68a71525307930921710d438a60333d9",
+      "oracle_sha256": "6608815603cdbf4b1ddb595e6aa7e50f68a71525307930921710d438a60333d9"
+    },
+    "ranges_kernel_route_gather_calls_phase_order_final_grid_barrier": {
+      "baseline_sha256": "458f24c9fed79ec7ab35232844ca2b1969e4305eecb3d42a8ec6f550d19c8a30",
+      "oracle_sha256": "458f24c9fed79ec7ab35232844ca2b1969e4305eecb3d42a8ec6f550d19c8a30",
+      "bytes": 15620,
+      "excluded_removed_blocks": [
+        "    for (int i = i0; i < JMAX * 16; i += G * NT) p.doneAs[i] = 0;\n"
+      ]
+    },
+    "final_output_combine_and_cuda_host_launch": {
+      "baseline_sha256": "5683cefd072fee8875390293f1d1b93db4a9eb72554d37cd7a1011c68d157f01",
+      "oracle_sha256": "5683cefd072fee8875390293f1d1b93db4a9eb72554d37cd7a1011c68d157f01",
+      "bytes": 13109,
+      "excluded_removed_blocks": []
+    }
+  },
+  "owner_semantics": "Current GPU-derived segment bounds only: phase A s1==16; phase B s0==0. Full units own themselves. A publishes only this owner's unsummed partial through the original ordinary epilogue and deferred kind-1 readiness, once per unit; all contributors retain their real K work.",
+  "invalid_output_reason": "A omits other contributors' partials; B also omits all unit epilogues and readiness, so phase B reads freshly zeroed xB and final combine reads freshly zeroed expert-output scratch. Neither is a numerical implementation.",
+  "B_preserved_pipeline_work": [
+    "GPU routing/ranges/order",
+    "phase-A gather and xready acquire/reset",
+    "weight and x bulk transfers",
+    "K loop/dequant/WGMMA",
+    "weight-slot release",
+    "mandatory WGMMA drain and x-slot release",
+    "final grid barrier and final combine"
+  ],
+  "layout_policy": "Params, Smem, WgsPend, scratch declarations/accessors and geometry retained byte-for-byte; unused declarations remain to preserve layout, not as fallback execution.",
+  "harness_requirements": [
+    "Prepare compliant baseline, never oracle.prepare; bind private oracle ma_ext/ma_scratch afterward",
+    "Fresh zeroed scratch; never reuse prepared expert outputs",
+    "No global A-to-B barrier",
+    "Native verifier must match registers/shared/block/grid and tensor instruction counts; fail on mismatch, never add dummy computation",
+    "Resource probe is expert-stage verification, not decode timing"
+  ],
+  "native_resource_equivalence": "UNVERIFIED: source preservation alone cannot establish compiled footprint or retained tensor instructions"
+}

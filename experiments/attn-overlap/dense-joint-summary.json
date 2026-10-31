@@ -1,0 +1,312 @@
+{
+  "kind": "end_to_end_joint_SK2_deletion_diagnostic",
+  "submission_allowed": false,
+  "legal_speedup_claim": false,
+  "baseline_sha256": "053dbacc8f0de4e6111ccb89cb91f629840852cf482a6ca423fe0eaff419c086",
+  "primary_report": "outputs/openkernel-challenge/modal-lab/layer-okc-h200-attn-overlap-08/dense-joint-c2.json",
+  "independent_weight_repeat_report": "outputs/openkernel-challenge/modal-lab/layer-okc-h200-attn-overlap-09/dense-joint-c4.json",
+  "primary_all_six_valid": true,
+  "repeat_all_six_valid": false,
+  "repeat_D16_D32_valid": true,
+  "invalid_reports_retained": [
+    {
+      "path": "outputs/openkernel-challenge/modal-lab/layer-okc-h200-attn-overlap-07/dense-joint-c1.json",
+      "reason": "Invalid one-sample floating-noise bound; even unchanged production rejected later replays; raw file retained."
+    },
+    {
+      "path": "outputs/openkernel-challenge/modal-lab/layer-okc-h200-attn-overlap-08/dense-joint-c3.json",
+      "reason": "D16f unchanged production-repeat top-8 ordering mismatch; same set/counts but exact-ID gate retained."
+    },
+    {
+      "path": "outputs/openkernel-challenge/modal-lab/layer-okc-h200-attn-overlap-09/dense-joint-c4.json",
+      "reason": "Untouched V16f exact-routing instability; no accepted six-load repeat ratio."
+    }
+  ],
+  "per_load": {
+    "D1": {
+      "primary_end_to_end_us": {
+        "production": 80.12567670835602,
+        "production_repeat": 80.19251682825627,
+        "frozen_production": 80.83458112612847,
+        "diag0": 81.28387204581692,
+        "diag0_repeat": 81.39896783376894,
+        "epilogue": 79.5323878767029,
+        "consumer": 78.09600053775695,
+        "both": 76.4825810347834
+      },
+      "primary_budget_us": {
+        "epilogue": 1.751484169114022,
+        "consumer": 3.1878715080599704,
+        "both": 4.801291011033527
+      },
+      "primary_valid": true,
+      "repeat_budget_us": {
+        "epilogue": 1.040516120772196,
+        "consumer": 3.036903097264215,
+        "both": 4.093159891424634
+      },
+      "repeat_load_valid": true,
+      "selected_launches_by_layer": {
+        "sliding": [
+          4,
+          4
+        ],
+        "full": [
+          4,
+          4
+        ]
+      },
+      "is_uncovered_negative_control": false,
+      "codegen_overhead_us": 0.44929091968845114,
+      "frozen_control_overhead_us": 0.7089044177724446,
+      "production_relative_both_us": 3.643095673572631,
+      "gate_us": null
+    },
+    "D16": {
+      "primary_end_to_end_us": {
+        "production": 147.06864604546178,
+        "production_repeat": 147.2072245012368,
+        "frozen_production": 147.24877272402085,
+        "diag0": 147.86761199995394,
+        "diag0_repeat": 147.79767874748475,
+        "epilogue": 145.44903156497787,
+        "consumer": 144.9107090912519,
+        "both": 143.26503266009593
+      },
+      "primary_budget_us": {
+        "epilogue": 2.4185804349760645,
+        "consumer": 2.956902908702034,
+        "both": 4.602579339858011
+      },
+      "primary_valid": true,
+      "repeat_budget_us": {
+        "epilogue": 2.7112236186381153,
+        "consumer": 2.9187063055653653,
+        "both": 4.416254919863519
+      },
+      "repeat_load_valid": true,
+      "selected_launches_by_layer": {
+        "sliding": [
+          4,
+          4
+        ],
+        "full": [
+          4,
+          4
+        ]
+      },
+      "is_uncovered_negative_control": false,
+      "codegen_overhead_us": 0.6188392759330839,
+      "frozen_control_overhead_us": 0.18012667855907694,
+      "production_relative_both_us": 3.80361338536585,
+      "gate_us": 12.6
+    },
+    "D32": {
+      "primary_end_to_end_us": {
+        "production": 194.43845304269945,
+        "production_repeat": 194.48412810602497,
+        "frozen_production": 194.64387023641217,
+        "diag0": 195.28619356213076,
+        "diag0_repeat": 195.28361241663657,
+        "epilogue": 192.98916153850095,
+        "consumer": 191.1889022636798,
+        "both": 189.55793796527772
+      },
+      "primary_budget_us": {
+        "epilogue": 2.2970320236298107,
+        "consumer": 4.097291298450955,
+        "both": 5.728255596853046
+      },
+      "primary_valid": true,
+      "repeat_budget_us": {
+        "epilogue": 1.6531646251678467,
+        "consumer": 4.217552561913749,
+        "both": 5.589937610972299
+      },
+      "repeat_load_valid": true,
+      "selected_launches_by_layer": {
+        "sliding": [
+          5,
+          5
+        ],
+        "full": [
+          5,
+          5
+        ]
+      },
+      "is_uncovered_negative_control": false,
+      "codegen_overhead_us": 0.6423233257185927,
+      "frozen_control_overhead_us": 0.20541719371271938,
+      "production_relative_both_us": 4.880515077421734,
+      "gate_us": 16.1
+    },
+    "V1": {
+      "primary_end_to_end_us": {
+        "production": 119.20309751745194,
+        "production_repeat": 119.23896689568797,
+        "frozen_production": 119.80309697889513,
+        "diag0": 119.94916068450097,
+        "diag0_repeat": 119.97445216101985,
+        "epilogue": 118.37935579880592,
+        "consumer": 117.3912262724292,
+        "both": 115.19871111358366
+      },
+      "primary_budget_us": {
+        "epilogue": 1.5698048856950493,
+        "consumer": 2.5579344120717735,
+        "both": 4.750449570917311
+      },
+      "primary_valid": true,
+      "repeat_budget_us": {
+        "epilogue": 1.653676972754539,
+        "consumer": 2.9612867942740735,
+        "both": 5.082578848927241
+      },
+      "repeat_load_valid": true,
+      "selected_launches_by_layer": {
+        "sliding": [
+          4,
+          4
+        ],
+        "full": [
+          4,
+          4
+        ]
+      },
+      "is_uncovered_negative_control": false,
+      "codegen_overhead_us": 0.14606370560584025,
+      "frozen_control_overhead_us": 0.5999994614431898,
+      "production_relative_both_us": 4.004386403868281,
+      "gate_us": null
+    },
+    "V16": {
+      "primary_end_to_end_us": {
+        "production": 287.6276104680953,
+        "production_repeat": 287.85961722174,
+        "frozen_production": 287.2913636026844,
+        "diag0": 287.51018787583996,
+        "diag0_repeat": 287.04541753376685,
+        "epilogue": 287.4678724235104,
+        "consumer": 287.58451799231193,
+        "both": 287.47638987918054
+      },
+      "primary_budget_us": {
+        "epilogue": 0.04231545232954659,
+        "consumer": -0.07433011647196963,
+        "both": 0.033797996659416185
+      },
+      "primary_valid": true,
+      "repeat_budget_us": {
+        "epilogue": 0.011867332843053191,
+        "consumer": 0.13006454513919152,
+        "both": -0.09677066437660642
+      },
+      "repeat_load_valid": false,
+      "selected_launches_by_layer": {
+        "sliding": [
+          0,
+          0
+        ],
+        "full": [
+          0,
+          0
+        ]
+      },
+      "is_uncovered_negative_control": true,
+      "codegen_overhead_us": 0.21882427315557607,
+      "frozen_control_overhead_us": -0.33624686541094206,
+      "production_relative_both_us": 0.15122058891478218,
+      "gate_us": null
+    },
+    "V32": {
+      "primary_end_to_end_us": {
+        "production": 370.6810318173901,
+        "production_repeat": 370.3749679750012,
+        "frozen_production": 370.6570306131917,
+        "diag0": 370.7594869117583,
+        "diag0_repeat": 370.13032167188584,
+        "epilogue": 370.2345735603763,
+        "consumer": 370.4503236278411,
+        "both": 371.062449870571
+      },
+      "primary_budget_us": {
+        "epilogue": 0.524913351381997,
+        "consumer": 0.3091632839172007,
+        "both": -0.3029629588127136
+      },
+      "primary_valid": true,
+      "repeat_budget_us": {
+        "epilogue": 0.4314821093312844,
+        "consumer": 0.0578018446122428,
+        "both": -0.24980691171464287
+      },
+      "repeat_load_valid": true,
+      "selected_launches_by_layer": {
+        "sliding": [
+          0,
+          0
+        ],
+        "full": [
+          0,
+          0
+        ]
+      },
+      "is_uncovered_negative_control": true,
+      "codegen_overhead_us": 0.10245629856660798,
+      "frozen_control_overhead_us": -0.024001204198384585,
+      "production_relative_both_us": -0.381418053180937,
+      "gate_us": null
+    }
+  },
+  "ratios": {
+    "epilogue": {
+      "raw_all_six_primary": 1.0108660529322528,
+      "coverage_aware_all_six": 1.010602592975938,
+      "D16_D32_only_primary": 1.0047317839692889,
+      "D16_D32_only_repeat": 1.004544847218403,
+      "production_relative_coverage_aware": 1.0055020472822642
+    },
+    "consumer": {
+      "raw_all_six_primary": 1.0174071190164147,
+      "coverage_aware_all_six": 1.0173095008256494,
+      "D16_D32_only_primary": 1.006924496236491,
+      "D16_D32_only_repeat": 1.0071937966102504,
+      "production_relative_coverage_aware": 1.0121751051397152
+    },
+    "both": {
+      "raw_all_six_primary": 1.0273656252594512,
+      "coverage_aware_all_six": 1.0274853625935345,
+      "D16_D32_only_primary": 1.0102846088640687,
+      "D16_D32_only_repeat": 1.0102047333738926,
+      "production_relative_coverage_aware": 1.0222996089868108
+    }
+  },
+  "aggregation": "46:16 weighted whole-layer medians per load, then equal six-load geometric mean. No individual projection or separate-deletion sums.",
+  "verification": {
+    "C2": {
+      "public_oracles": 384,
+      "public_oracles_passed": true,
+      "unfrozen_mode0_capture_checks": 24,
+      "unfrozen_mode0_capture_passed": true,
+      "max_weighted_AA_deviation": 0.001699847872583149
+    },
+    "C4": {
+      "public_oracles": 384,
+      "public_oracles_passed": true,
+      "unfrozen_mode0_capture_checks": 24,
+      "unfrozen_mode0_capture_passed": true,
+      "max_weighted_AA_deviation": 0.002138031148790187
+    }
+  },
+  "decision": "KILL D16/D32 dense rewrite for this lever: independently repeated BOTH budgets below12.6us/16.1us; no legal candidate or submission.",
+  "limits": [
+    "Expanded existing bits1/2 cover escape fixups and fused router paths; native producer/prologue source and real transfer arguments retained.",
+    "Frozen correct dense returns are invalid for submission. Their overhead and runtime-mask codegen overhead are measured separately.",
+    "Narrow direct-escape table traversal and original sparse BF16 activation reads remain; real producer and synchronization work remains everywhere.",
+    "V16/V32 do not execute SK2. Raw measured differences are retained as negative-control noise, set to zero only in explicitly coverage-aware projections.",
+    "No native timeline or NCU counter measurement claimed; real-position coverage is recorded at original native dispatch boundaries.",
+    "A deletion diagnostic is not a mathematical upper bound on all possible dense algorithms."
+  ],
+  "current_task_runtime_conservative_upper_usd": 4.46646798310036,
+  "shutdown_evidence": "work/lanes/attn-overlap/dense-joint-shutdown.json"
+}

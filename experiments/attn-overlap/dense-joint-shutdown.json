@@ -1,0 +1,29 @@
+{
+  "checked_at": "2026-10-31T02:41:09.803089-07:00",
+  "workspace": "secondary-workspace",
+  "identity": {
+    "sandbox_id": "sb-JCp7L5dFMyoXNl74fFE5wA",
+    "task_id": "ta-01M68MXGMACTFPECYV4YP3MDDS",
+    "exit_code": 137
+  },
+  "container_absent": true,
+  "active_containers": [
+    {
+      "container_id": "ta-01M68MTZM208XNY28N5KBWQ8CS",
+      "app_id": "ap-NzwBDMg2TMxBvleKyFOsYW",
+      "app_name": "okc-trxphxle-01a18750",
+      "start_time": "2026-10-31 02:32:21-07:00"
+    }
+  ],
+  "session": {
+    "name": "okc-h200-attn-overlap-09",
+    "sandbox_id": "sb-JCp7L5dFMyoXNl74fFE5wA",
+    "workspace": "secondary-workspace",
+    "state": "finished",
+    "exit_code": 137,
+    "last_layer_exit_code": 1,
+    "observed_finished_at": "2026-10-31T09:41:08.500383+00:00"
+  },
+  "official_checks_used": 0,
+  "submitted": false
+}

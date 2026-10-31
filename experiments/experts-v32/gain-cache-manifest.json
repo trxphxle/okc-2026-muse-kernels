@@ -1,0 +1,25 @@
+{
+  "kind": "prepare_effective_post_expert_gain",
+  "native_sources": [
+    {
+      "before_sha256": "0464b1103ed2db882edcfe78b450170aafaec659d180463e3e62cb067c65509d",
+      "after_sha256": "37beb6bb561ad7e7a63b938a72eeef7df4ca1bc661e18777c6a9d864bf82ea54",
+      "removed_gain_rounds": 16,
+      "retained_activation_rounds": 22
+    },
+    {
+      "before_sha256": "c86c7b601333cbbe2d1455d7103884df661cdaa72165c1d5ebe581070903c161",
+      "after_sha256": "c97c55f8f0ff83813995dda3d37a05f4f64b626b69155eb7305ab876946cefce",
+      "removed_gain_rounds": 16,
+      "retained_activation_rounds": 22
+    }
+  ],
+  "native_gain_consumers": 32,
+  "marlin_gain_consumers": 1,
+  "shared_gain_slots": [
+    "state.g_postexp",
+    "state.ma_w[7]"
+  ],
+  "input_sha256": "053dbacc8f0de4e6111ccb89cb91f629840852cf482a6ca423fe0eaff419c086",
+  "output_sha256": "e17e99886c9711b0e74d09b20465243f79ccfd60617d363429fad88893ed76bb"
+}

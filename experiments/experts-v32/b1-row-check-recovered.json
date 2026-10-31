@@ -1,0 +1,481 @@
+{
+  "status": "complete",
+  "artifact_files": [
+    "outputs/openkernel-challenge/modal-lab/layer-okc-h200-experts-v32-11/b1-row-check-timing.json",
+    "outputs/openkernel-challenge/modal-lab/layer-okc-h200-experts-v32-11/b1-row-check-profiled.json",
+    "outputs/openkernel-challenge/modal-lab/layer-okc-h200-experts-v32-11/b1-row-check-ncu.csv"
+  ],
+  "limitations": "Standalone B1 timing does not include O-to-B1 PDL overlap; whole-layer screen is authoritative.",
+  "native": [
+    {
+      "tokens": 1,
+      "arm": "base",
+      "record": {
+        "kernel": "void glue_cluster_boundary<4, 32, 0, 0, 1, 0>(GlueArgs)",
+        "metrics": {
+          "gpu__time_duration.sum": 4992.0,
+          "l1tex__t_sectors_pipe_lsu_mem_local_op_ld.sum": 0.0,
+          "l1tex__t_sectors_pipe_lsu_mem_local_op_st.sum": 0.0,
+          "Block Size": 128.0,
+          "Cluster Size": 8.0,
+          "Grid Size": 8.0,
+          "Registers Per Thread": 64.0,
+          "Shared Memory Configuration Size": 32768.0,
+          "Driver Shared Memory Per Block": 1024.0,
+          "Dynamic Shared Memory Per Block": 0.0,
+          "Static Shared Memory Per Block": 384.0,
+          "# SMs": 132.0,
+          "Stack Size": 1024.0,
+          "Threads": 1024.0,
+          "# TPCs": 66.0,
+          "Uses Green Context": 0.0,
+          "Waves Per SM": 0.01
+        },
+        "units": {
+          "gpu__time_duration.sum": "ns",
+          "l1tex__t_sectors_pipe_lsu_mem_local_op_ld.sum": "sector",
+          "l1tex__t_sectors_pipe_lsu_mem_local_op_st.sum": "sector",
+          "Block Size": "",
+          "Cluster Size": "",
+          "Grid Size": "",
+          "Registers Per Thread": "register/thread",
+          "Shared Memory Configuration Size": "byte",
+          "Driver Shared Memory Per Block": "byte/block",
+          "Dynamic Shared Memory Per Block": "byte/block",
+          "Static Shared Memory Per Block": "byte/block",
+          "# SMs": "SM",
+          "Stack Size": "",
+          "Threads": "thread",
+          "# TPCs": "",
+          "Uses Green Context": "",
+          "Waves Per SM": ""
+        }
+      }
+    },
+    {
+      "tokens": 1,
+      "arm": "candidate",
+      "record": {
+        "kernel": "void glue_row_boundary<4, 32, 0, 0, 1, 0>(GlueArgs)",
+        "metrics": {
+          "gpu__time_duration.sum": 5376.0,
+          "l1tex__t_sectors_pipe_lsu_mem_local_op_ld.sum": 0.0,
+          "l1tex__t_sectors_pipe_lsu_mem_local_op_st.sum": 0.0,
+          "Block Size": 1024.0,
+          "Cluster Size": 0.0,
+          "Grid Size": 1.0,
+          "Registers Per Thread": 60.0,
+          "Shared Memory Configuration Size": 8192.0,
+          "Driver Shared Memory Per Block": 1024.0,
+          "Dynamic Shared Memory Per Block": 0.0,
+          "Static Shared Memory Per Block": 384.0,
+          "# SMs": 132.0,
+          "Stack Size": 1024.0,
+          "Threads": 1024.0,
+          "# TPCs": 66.0,
+          "Uses Green Context": 0.0,
+          "Waves Per SM": 0.01
+        },
+        "units": {
+          "gpu__time_duration.sum": "ns",
+          "l1tex__t_sectors_pipe_lsu_mem_local_op_ld.sum": "sector",
+          "l1tex__t_sectors_pipe_lsu_mem_local_op_st.sum": "sector",
+          "Block Size": "",
+          "Cluster Size": "",
+          "Grid Size": "",
+          "Registers Per Thread": "register/thread",
+          "Shared Memory Configuration Size": "byte",
+          "Driver Shared Memory Per Block": "byte/block",
+          "Dynamic Shared Memory Per Block": "byte/block",
+          "Static Shared Memory Per Block": "byte/block",
+          "# SMs": "SM",
+          "Stack Size": "",
+          "Threads": "thread",
+          "# TPCs": "",
+          "Uses Green Context": "",
+          "Waves Per SM": ""
+        }
+      }
+    },
+    {
+      "tokens": 8,
+      "arm": "base",
+      "record": {
+        "kernel": "void glue_cluster_boundary<4, 32, 0, 0, 1, 1>(GlueArgs)",
+        "metrics": {
+          "gpu__time_duration.sum": 4704.0,
+          "l1tex__t_sectors_pipe_lsu_mem_local_op_ld.sum": 0.0,
+          "l1tex__t_sectors_pipe_lsu_mem_local_op_st.sum": 0.0,
+          "Block Size": 128.0,
+          "Cluster Size": 8.0,
+          "Grid Size": 64.0,
+          "Registers Per Thread": 64.0,
+          "Shared Memory Configuration Size": 32768.0,
+          "Driver Shared Memory Per Block": 1024.0,
+          "Dynamic Shared Memory Per Block": 0.0,
+          "Static Shared Memory Per Block": 384.0,
+          "# SMs": 132.0,
+          "Stack Size": 1024.0,
+          "Threads": 8192.0,
+          "# TPCs": 66.0,
+          "Uses Green Context": 0.0,
+          "Waves Per SM": 0.06
+        },
+        "units": {
+          "gpu__time_duration.sum": "ns",
+          "l1tex__t_sectors_pipe_lsu_mem_local_op_ld.sum": "sector",
+          "l1tex__t_sectors_pipe_lsu_mem_local_op_st.sum": "sector",
+          "Block Size": "",
+          "Cluster Size": "",
+          "Grid Size": "",
+          "Registers Per Thread": "register/thread",
+          "Shared Memory Configuration Size": "byte",
+          "Driver Shared Memory Per Block": "byte/block",
+          "Dynamic Shared Memory Per Block": "byte/block",
+          "Static Shared Memory Per Block": "byte/block",
+          "# SMs": "SM",
+          "Stack Size": "",
+          "Threads": "thread",
+          "# TPCs": "",
+          "Uses Green Context": "",
+          "Waves Per SM": ""
+        }
+      }
+    },
+    {
+      "tokens": 8,
+      "arm": "candidate",
+      "record": {
+        "kernel": "void glue_row_boundary<4, 32, 0, 0, 1, 1>(GlueArgs)",
+        "metrics": {
+          "gpu__time_duration.sum": 5760.0,
+          "l1tex__t_sectors_pipe_lsu_mem_local_op_ld.sum": 0.0,
+          "l1tex__t_sectors_pipe_lsu_mem_local_op_st.sum": 0.0,
+          "Block Size": 1024.0,
+          "Cluster Size": 0.0,
+          "Grid Size": 8.0,
+          "Registers Per Thread": 60.0,
+          "Shared Memory Configuration Size": 8192.0,
+          "Driver Shared Memory Per Block": 1024.0,
+          "Dynamic Shared Memory Per Block": 0.0,
+          "Static Shared Memory Per Block": 384.0,
+          "# SMs": 132.0,
+          "Stack Size": 1024.0,
+          "Threads": 8192.0,
+          "# TPCs": 66.0,
+          "Uses Green Context": 0.0,
+          "Waves Per SM": 0.06
+        },
+        "units": {
+          "gpu__time_duration.sum": "ns",
+          "l1tex__t_sectors_pipe_lsu_mem_local_op_ld.sum": "sector",
+          "l1tex__t_sectors_pipe_lsu_mem_local_op_st.sum": "sector",
+          "Block Size": "",
+          "Cluster Size": "",
+          "Grid Size": "",
+          "Registers Per Thread": "register/thread",
+          "Shared Memory Configuration Size": "byte",
+          "Driver Shared Memory Per Block": "byte/block",
+          "Dynamic Shared Memory Per Block": "byte/block",
+          "Static Shared Memory Per Block": "byte/block",
+          "# SMs": "SM",
+          "Stack Size": "",
+          "Threads": "thread",
+          "# TPCs": "",
+          "Uses Green Context": "",
+          "Waves Per SM": ""
+        }
+      }
+    }
+  ],
+  "bitwise_cases_per_process": 30,
+  "sources": {
+    "baseline": "053dbacc8f0de4e6111ccb89cb91f629840852cf482a6ca423fe0eaff419c086",
+    "candidate": "504e75b27e85caa37e112e0330853381faa910c5ec16b760d602a3df3ebefa31"
+  },
+  "candidate_prepare_seconds": 18.000297976,
+  "standalone_timings": [
+    {
+      "tokens": 1,
+      "fixture": "random",
+      "router": true,
+      "bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "samples_us": [
+        {
+          "base": 7.679999805986881,
+          "candidate": 8.86400043964386,
+          "repeat": 7.584000006318092
+        },
+        {
+          "candidate": 8.224000222980976,
+          "repeat": 7.391999941319227,
+          "base": 7.552000228315592
+        },
+        {
+          "repeat": 7.391999941319227,
+          "base": 7.360000163316727,
+          "candidate": 8.224000222980976
+        },
+        {
+          "repeat": 7.391999941319227,
+          "candidate": 8.224000222980976,
+          "base": 7.327999919652939
+        },
+        {
+          "base": 7.360000163316727,
+          "repeat": 7.391999941319227,
+          "candidate": 8.448000065982342
+        },
+        {
+          "candidate": 8.191999979317188,
+          "base": 7.360000163316727,
+          "repeat": 7.391999941319227
+        },
+        {
+          "base": 7.7760000713169575,
+          "candidate": 8.448000065982342,
+          "repeat": 7.584000006318092
+        },
+        {
+          "candidate": 8.224000222980976,
+          "repeat": 7.615999784320593,
+          "base": 7.360000163316727
+        },
+        {
+          "repeat": 7.840000092983246,
+          "base": 7.360000163316727,
+          "candidate": 9.535999968647957
+        },
+        {
+          "repeat": 7.648000027984381,
+          "candidate": 8.224000222980976,
+          "base": 7.552000228315592
+        },
+        {
+          "base": 7.552000228315592,
+          "repeat": 7.391999941319227,
+          "candidate": 8.224000222980976
+        },
+        {
+          "candidate": 8.448000065982342,
+          "base": 7.807999849319458,
+          "repeat": 7.615999784320593
+        },
+        {
+          "base": 7.360000163316727,
+          "candidate": 8.320000022649765,
+          "repeat": 7.615999784320593
+        },
+        {
+          "candidate": 8.448000065982342,
+          "repeat": 7.391999941319227,
+          "base": 7.360000163316727
+        },
+        {
+          "repeat": 7.807999849319458,
+          "base": 7.807999849319458,
+          "candidate": 8.383999578654766
+        },
+        {
+          "repeat": 7.615999784320593,
+          "candidate": 8.25599953532219,
+          "base": 7.360000163316727
+        },
+        {
+          "base": 7.360000163316727,
+          "repeat": 7.360000163316727,
+          "candidate": 8.48000030964613
+        },
+        {
+          "candidate": 8.448000065982342,
+          "base": 7.360000163316727,
+          "repeat": 7.712000049650669
+        },
+        {
+          "base": 7.7760000713169575,
+          "candidate": 8.671999908983707,
+          "repeat": 7.391999941319227
+        },
+        {
+          "candidate": 8.224000222980976,
+          "repeat": 8.287999778985977,
+          "base": 7.807999849319458
+        },
+        {
+          "repeat": 7.807999849319458,
+          "base": 7.360000163316727,
+          "candidate": 8.352000266313553
+        },
+        {
+          "repeat": 7.7760000713169575,
+          "candidate": 8.224000222980976,
+          "base": 7.327999919652939
+        },
+        {
+          "base": 8.671999908983707,
+          "repeat": 7.903999648988247,
+          "candidate": 8.224000222980976
+        },
+        {
+          "candidate": 8.224000222980976,
+          "base": 7.360000163316727,
+          "repeat": 7.807999849319458
+        }
+      ],
+      "median_us": {
+        "base": 7.360000163316727,
+        "candidate": 8.287999778985977,
+        "repeat": 7.615999784320593
+      },
+      "candidate_ratio": 0.8949416298348454,
+      "control_ratio": 0.9956710256687598,
+      "status": "passed"
+    },
+    {
+      "tokens": 8,
+      "fixture": "random",
+      "router": true,
+      "bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "samples_us": [
+        {
+          "base": 8.063999935984612,
+          "candidate": 9.151999838650227,
+          "repeat": 7.968000136315823
+        },
+        {
+          "candidate": 8.704000152647495,
+          "repeat": 8.224000222980976,
+          "base": 8.191999979317188
+        },
+        {
+          "repeat": 7.903999648988247,
+          "base": 7.7760000713169575,
+          "candidate": 8.927999995648861
+        },
+        {
+          "repeat": 8.00000037997961,
+          "candidate": 8.736000396311283,
+          "base": 8.86400043964386
+        },
+        {
+          "base": 7.7760000713169575,
+          "repeat": 8.063999935984612,
+          "candidate": 8.704000152647495
+        },
+        {
+          "candidate": 8.736000396311283,
+          "base": 7.7760000713169575,
+          "repeat": 7.968000136315823
+        },
+        {
+          "base": 7.7760000713169575,
+          "candidate": 8.704000152647495,
+          "repeat": 9.568000212311745
+        },
+        {
+          "candidate": 8.704000152647495,
+          "repeat": 8.031999692320824,
+          "base": 7.807999849319458
+        },
+        {
+          "repeat": 7.7760000713169575,
+          "base": 7.872000336647034,
+          "candidate": 8.927999995648861
+        },
+        {
+          "repeat": 8.00000037997961,
+          "candidate": 8.927999995648861,
+          "base": 9.119999594986439
+        },
+        {
+          "base": 7.7760000713169575,
+          "repeat": 8.00000037997961,
+          "candidate": 8.704000152647495
+        },
+        {
+          "candidate": 8.927999995648861,
+          "base": 7.7760000713169575,
+          "repeat": 8.00000037997961
+        },
+        {
+          "base": 7.807999849319458,
+          "candidate": 8.704000152647495,
+          "repeat": 8.224000222980976
+        },
+        {
+          "candidate": 8.704000152647495,
+          "repeat": 8.00000037997961,
+          "base": 8.00000037997961
+        },
+        {
+          "repeat": 8.00000037997961,
+          "base": 7.807999849319458,
+          "candidate": 8.704000152647495
+        },
+        {
+          "repeat": 8.031999692320824,
+          "candidate": 8.736000396311283,
+          "base": 7.7760000713169575
+        },
+        {
+          "base": 7.7760000713169575,
+          "repeat": 8.128000423312187,
+          "candidate": 8.960000239312649
+        },
+        {
+          "candidate": 8.736000396311283,
+          "base": 8.00000037997961,
+          "repeat": 7.7760000713169575
+        },
+        {
+          "base": 7.807999849319458,
+          "candidate": 8.704000152647495,
+          "repeat": 8.00000037997961
+        },
+        {
+          "candidate": 8.927999995648861,
+          "repeat": 8.00000037997961,
+          "base": 7.7760000713169575
+        },
+        {
+          "repeat": 8.00000037997961,
+          "base": 7.7760000713169575,
+          "candidate": 8.927999995648861
+        },
+        {
+          "repeat": 8.00000037997961,
+          "candidate": 8.927999995648861,
+          "base": 8.00000037997961
+        },
+        {
+          "base": 7.872000336647034,
+          "repeat": 8.224000222980976,
+          "candidate": 8.704000152647495
+        },
+        {
+          "candidate": 8.736000396311283,
+          "base": 7.807999849319458,
+          "repeat": 7.7760000713169575
+        }
+      ],
+      "median_us": {
+        "base": 7.807999849319458,
+        "candidate": 8.736000396311283,
+        "repeat": 8.00000037997961
+      },
+      "candidate_ratio": 0.8935775907226717,
+      "control_ratio": 0.9759517707600025,
+      "status": "passed"
+    }
+  ]
+}

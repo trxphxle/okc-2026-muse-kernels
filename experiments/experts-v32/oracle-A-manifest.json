@@ -1,0 +1,112 @@
+{
+  "mode": "A",
+  "diagnostic_only": true,
+  "never_submit": true,
+  "numerically_valid": false,
+  "baseline_sha256": "053dbacc8f0de4e6111ccb89cb91f629840852cf482a6ca423fe0eaff419c086",
+  "oracle_sha256": "c63101beb22d6fd41c67efcdb1fe7abb3f6b4a24e1a7a6182a69d32643e4c85d",
+  "literal_style": "r\"\"\"",
+  "unchanged_outside_literal_and_first_marker_sha256": "def164b27f4243d699d598ea99c81efe6af66f7c033e3863d289e1d842ddc7f3",
+  "edits": [
+    {
+      "name": "pending_protocol_comment",
+      "cuda_start": 101098,
+      "cuda_end": 101436,
+      "removed_sha256": "fe5a7227a128f7311e772e0232aee97de2b49c56ce6c68d3d10375bbbe03ad72",
+      "replacement": "// Diagnostic pending state: only ordinary kind-1 readiness is used by A; B leaves this state idle.\n"
+    },
+    {
+      "name": "split_flush_fixup_readback",
+      "cuda_start": 104767,
+      "cuda_end": 107099,
+      "removed_sha256": "ada08540087c1940f716df88da039712262a517c92f05a39ecf499c66013514f",
+      "replacement": "}\n"
+    },
+    {
+      "name": "split_publish_and_contributor_protocol",
+      "cuda_start": 112179,
+      "cuda_end": 112873,
+      "removed_sha256": "a30b5fd9f7ccd94c421832f7c7b7ead81bb13a6a4eb1f404cea7b2231e5ff780",
+      "replacement": "  if (!(PB ? s0 == 0 : s1 == 16)) return;  // diagnostic selected owner, never sum partials\n"
+    },
+    {
+      "name": "split_fixup_mapping",
+      "cuda_start": 113856,
+      "cuda_end": 114052,
+      "removed_sha256": "bb03a43ae527da12f866dfcc7be71ace3f8c43f27a9805ba04ab4ced8a3fcdcc",
+      "replacement": "    const int slot = (s1 - s0 == 16) ? -1 : 0;  // diagnostic split marker, no fixup mapping\n"
+    }
+  ],
+  "unchanged_sections": {
+    "routing_layouts_scratch_cost_tables_order": {
+      "baseline_sha256": "62ecd7e09535e6c4679e8e17afc38920c69f273a93a93dd9519fca73a8fd3a74",
+      "oracle_sha256": "62ecd7e09535e6c4679e8e17afc38920c69f273a93a93dd9519fca73a8fd3a74",
+      "bytes": 94769,
+      "excluded_removed_blocks": []
+    },
+    "weight_producer": {
+      "baseline_sha256": "2296e5f53b80508bd9c1fbb9ac639d5f4b09c818376c0b0594ca68ac3fa296c0",
+      "oracle_sha256": "2296e5f53b80508bd9c1fbb9ac639d5f4b09c818376c0b0594ca68ac3fa296c0",
+      "bytes": 1715,
+      "excluded_removed_blocks": []
+    },
+    "x_producer": {
+      "baseline_sha256": "8ef95d17574a2b31e0ba7cd52a5b18aedca0c24a936c515967d8e6c442433080",
+      "oracle_sha256": "8ef95d17574a2b31e0ba7cd52a5b18aedca0c24a936c515967d8e6c442433080",
+      "bytes": 2385,
+      "excluded_removed_blocks": []
+    },
+    "gather": {
+      "baseline_sha256": "5445c5dd08b9a2f76e48e0f0bfebae88e6558f0115caece87df2daf0bc82a0a9",
+      "oracle_sha256": "5445c5dd08b9a2f76e48e0f0bfebae88e6558f0115caece87df2daf0bc82a0a9"
+    },
+    "K_dequant_WGMMA_weight_and_x_slot_pipeline": {
+      "baseline_sha256": "ddba27cc7cb4c642650dcec55231b6f98b9200539dea6d829089b6668edf0241",
+      "oracle_sha256": "ddba27cc7cb4c642650dcec55231b6f98b9200539dea6d829089b6668edf0241",
+      "bytes": 4822,
+      "excluded_removed_blocks": []
+    },
+    "mandatory_drain_and_x_release": {
+      "baseline_sha256": "6608815603cdbf4b1ddb595e6aa7e50f68a71525307930921710d438a60333d9",
+      "oracle_sha256": "6608815603cdbf4b1ddb595e6aa7e50f68a71525307930921710d438a60333d9"
+    },
+    "ordinary_epilogue_body": {
+      "baseline_sha256": "0492c605f979fa15e53610642ff0707c8f6bb5aa40043e8fbc550666cdeb4b9e",
+      "oracle_sha256": "0492c605f979fa15e53610642ff0707c8f6bb5aa40043e8fbc550666cdeb4b9e",
+      "bytes": 2508,
+      "excluded_removed_blocks": []
+    },
+    "ranges_kernel_route_gather_calls_phase_order_final_grid_barrier": {
+      "baseline_sha256": "9ea3fdb01b43b274f682e9583cd3c4fb539ee82d87abf8bedf97ac77c2899eac",
+      "oracle_sha256": "9ea3fdb01b43b274f682e9583cd3c4fb539ee82d87abf8bedf97ac77c2899eac",
+      "bytes": 15686,
+      "excluded_removed_blocks": []
+    },
+    "final_output_combine_and_cuda_host_launch": {
+      "baseline_sha256": "5683cefd072fee8875390293f1d1b93db4a9eb72554d37cd7a1011c68d157f01",
+      "oracle_sha256": "5683cefd072fee8875390293f1d1b93db4a9eb72554d37cd7a1011c68d157f01",
+      "bytes": 13109,
+      "excluded_removed_blocks": []
+    }
+  },
+  "owner_semantics": "Current GPU-derived segment bounds only: phase A s1==16; phase B s0==0. Full units own themselves. A publishes only this owner's unsummed partial through the original ordinary epilogue and deferred kind-1 readiness, once per unit; all contributors retain their real K work.",
+  "invalid_output_reason": "A omits other contributors' partials; B also omits all unit epilogues and readiness, so phase B reads freshly zeroed xB and final combine reads freshly zeroed expert-output scratch. Neither is a numerical implementation.",
+  "B_preserved_pipeline_work": [
+    "GPU routing/ranges/order",
+    "phase-A gather and xready acquire/reset",
+    "weight and x bulk transfers",
+    "K loop/dequant/WGMMA",
+    "weight-slot release",
+    "mandatory WGMMA drain and x-slot release",
+    "final grid barrier and final combine"
+  ],
+  "layout_policy": "Params, Smem, WgsPend, scratch declarations/accessors and geometry retained byte-for-byte; unused declarations remain to preserve layout, not as fallback execution.",
+  "harness_requirements": [
+    "Prepare compliant baseline, never oracle.prepare; bind private oracle ma_ext/ma_scratch afterward",
+    "Fresh zeroed scratch; never reuse prepared expert outputs",
+    "No global A-to-B barrier",
+    "Native verifier must match registers/shared/block/grid and tensor instruction counts; fail on mismatch, never add dummy computation",
+    "Resource probe is expert-stage verification, not decode timing"
+  ],
+  "native_resource_equivalence": "UNVERIFIED: source preservation alone cannot establish compiled footprint or retained tensor instructions"
+}

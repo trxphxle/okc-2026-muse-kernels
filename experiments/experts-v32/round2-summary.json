@@ -1,0 +1,147 @@
+{
+  "status": "complete",
+  "decision": "do not build: all current routing-only ideal ceilings below3%; tested multicast protocol loses",
+  "official_checks": 0,
+  "production_candidate_built": false,
+  "model_evidence": "work/lanes/experts-v32/reuse-bound.json",
+  "microbenchmark_evidence": "outputs/openkernel-challenge/modal-lab/layer-okc-h200-experts-v32-05/multicast-verified.json",
+  "current_ideal_board_ceiling_max": 1.0147564253056447,
+  "cohorts": {
+    "matched_native": {
+      "total_fixtures": 9,
+      "board_speedup_ideal": 1.013641456774797,
+      "board_speedup_pair": 1.011370687178949
+    },
+    "current_aa": {
+      "total_fixtures": 72,
+      "board_speedup_ideal": 1.0147564253056447,
+      "board_speedup_pair": 1.0107194461828977
+    },
+    "current_second_weight": {
+      "total_fixtures": 144,
+      "board_speedup_ideal": 1.013755614683545,
+      "board_speedup_pair": 1.009739963375347
+    },
+    "historical_layer": {
+      "total_fixtures": 36,
+      "board_speedup_ideal": 1.0086331614219548,
+      "board_speedup_pair": 1.0086331614219548
+    }
+  },
+  "aa_geomeans": [
+    1.0004458835272267,
+    0.9987766126459499
+  ],
+  "validator_fault_detection": {
+    "0": 2,
+    "2": 2
+  },
+  "dynamic_shared_reservation_bytes": 232192,
+  "cuobjdump_static_shared_bytes": 1024,
+  "max_active_two_cta_clusters": 66,
+  "transfer_summary": {
+    "D32": {
+      "mean_event_us": {
+        "independent": 116.34666348497073,
+        "cluster_independent": 155.65333515405655,
+        "multicast": 156.77866339683533,
+        "independent_repeat": 116.43199995160103
+      },
+      "geomean_paired_ratio": {
+        "cluster_independent": 0.747134658242675,
+        "multicast": 0.7416778100410939,
+        "independent_repeat": 0.9994327394029647
+      },
+      "geomean_multicast_vs_cluster": 0.9941435283880947,
+      "mean_dram_MB": {
+        "independent": 500.18816,
+        "cluster_independent": 500.1924266666666,
+        "multicast": 500.19660799999997
+      },
+      "mean_l2_read_MB": {
+        "independent": 750.3757546666667,
+        "cluster_independent": 750.675168,
+        "multicast": 750.709376
+      }
+    },
+    "V16": {
+      "mean_event_us": {
+        "independent": 146.1973339319229,
+        "cluster_independent": 196.38933489720026,
+        "multicast": 198.19733500480652,
+        "independent_repeat": 146.5813343723615
+      },
+      "geomean_paired_ratio": {
+        "cluster_independent": 0.744180741978609,
+        "multicast": 0.7384300321145549,
+        "independent_repeat": 0.9990782556736749
+      },
+      "geomean_multicast_vs_cluster": 0.9908883359168963,
+      "mean_dram_MB": {
+        "independent": 641.7672533333333,
+        "cluster_independent": 641.7705813333333,
+        "multicast": 641.7695573333333
+      },
+      "mean_l2_read_MB": {
+        "independent": 964.395968,
+        "cluster_independent": 963.128448,
+        "multicast": 963.1380266666666
+      }
+    },
+    "V32": {
+      "mean_event_us": {
+        "independent": 162.59199877580008,
+        "cluster_independent": 215.16800175110498,
+        "multicast": 217.78666724761328,
+        "independent_repeat": 162.9600003361702
+      },
+      "geomean_paired_ratio": {
+        "cluster_independent": 0.7545608657528323,
+        "multicast": 0.7459864311561027,
+        "independent_repeat": 0.997438742960958
+      },
+      "geomean_multicast_vs_cluster": 0.9887484260365481,
+      "mean_dram_MB": {
+        "independent": 717.2448426666666,
+        "cluster_independent": 717.2456960000001,
+        "multicast": 717.2462933333334
+      },
+      "mean_l2_read_MB": {
+        "independent": 1079.2809813333333,
+        "cluster_independent": 1076.423488,
+        "multicast": 1076.440192
+      }
+    },
+    "all_paired_control": {
+      "mean_event_us": {
+        "independent": 205.6639939546585,
+        "cluster_independent": 416.9439971446991,
+        "multicast": 432.671993970871,
+        "independent_repeat": 205.26400208473206
+      },
+      "geomean_paired_ratio": {
+        "cluster_independent": 0.4927794915296443,
+        "multicast": 0.4743540051665904,
+        "independent_repeat": 0.9999210409248344
+      },
+      "geomean_multicast_vs_cluster": 0.9617673356453851,
+      "mean_dram_MB": {
+        "independent": 906.00064,
+        "cluster_independent": 906.036736,
+        "multicast": 906.053632
+      },
+      "mean_l2_read_MB": {
+        "independent": 1359.162144,
+        "cluster_independent": 1360.324576,
+        "multicast": 1360.289632
+      }
+    }
+  },
+  "limitations": [
+    "Transfer-only microbenchmark is not a MoE candidate.",
+    "Per-stage cluster barriers are one tested protocol, not a proof that every multicast protocol loses.",
+    "Paired independent reads already align same-address requests and share physical reads.",
+    "Job bytes are issued bytes, not necessarily extra DRAM bytes.",
+    "Whole-kernel measured-bandwidth deletion model is optimistic and not a mathematical hardware limit."
+  ]
+}

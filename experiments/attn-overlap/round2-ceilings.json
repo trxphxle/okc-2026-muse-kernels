@@ -1,0 +1,90 @@
+{
+  "baseline_source_sha256": "053dbacc8f0de4e6111ccb89cb91f629840852cf482a6ca423fe0eaff419c086",
+  "gather_report": "outputs/openkernel-challenge/modal-lab/layer-okc-h200-attn-overlap-04/round2-gather-g2.json",
+  "sliding_baseline_report": "outputs/openkernel-challenge/modal-lab/layer-okc-h200-attn-overlap-03/round2-baseline.json",
+  "decode_cost_report": "outputs/openkernel-challenge/modal-lab/layer-okc-h200-main-01/compare-alygg77-abba.json",
+  "cases": {
+    "D1": {
+      "sliding_native_us": 4.881,
+      "full_native_us": 10.529,
+      "attention_weighted_us": 6.3385483870967745,
+      "gather_gap_us": 0.0,
+      "weighted_gap_us": 0.0,
+      "attention_load_speedup_proxy": 1.0,
+      "decode_weighted_us": 79.70890300648827,
+      "decode_load_speedup_projection": 1.0
+    },
+    "D16": {
+      "sliding_native_us": 7.775,
+      "full_native_us": 88.162,
+      "attention_weighted_us": 28.520032258064518,
+      "gather_gap_us": 2.8800000000000097,
+      "weighted_gap_us": 0.7432258064516154,
+      "attention_load_speedup_proxy": 1.0267570646663904,
+      "decode_weighted_us": 150.56799977056443,
+      "decode_load_speedup_projection": 1.0049606335907415
+    },
+    "D32": {
+      "sliding_native_us": 9.568,
+      "full_native_us": 164.291,
+      "attention_weighted_us": 49.49651612903226,
+      "gather_gap_us": 2.8479999999999848,
+      "weighted_gap_us": 0.73496774193548,
+      "attention_load_speedup_proxy": 1.0150726908034358,
+      "decode_weighted_us": 194.68851675910335,
+      "decode_load_speedup_projection": 1.0037894008419017
+    },
+    "V1": {
+      "sliding_native_us": 7.489,
+      "full_native_us": 14.787,
+      "attention_weighted_us": 9.372354838709677,
+      "gather_gap_us": 0.0,
+      "weighted_gap_us": 0.0,
+      "attention_load_speedup_proxy": 1.0,
+      "decode_weighted_us": 121.4389689867535,
+      "decode_load_speedup_projection": 1.0
+    },
+    "V16": {
+      "sliding_native_us": 12.319,
+      "full_native_us": 100.065,
+      "attention_weighted_us": 34.96312903225807,
+      "gather_gap_us": 16.480999999999995,
+      "weighted_gap_us": 4.253161290322579,
+      "attention_load_speedup_proxy": 1.1384944890226878,
+      "decode_weighted_us": 304.02425700618375,
+      "decode_load_speedup_projection": 1.0141880299705544
+    },
+    "V32": {
+      "sliding_native_us": 15.84,
+      "full_native_us": 184.064,
+      "attention_weighted_us": 59.25264516129032,
+      "gather_gap_us": 20.703000000000003,
+      "weighted_gap_us": 5.342709677419355,
+      "attention_load_speedup_proxy": 1.0991043604386768,
+      "decode_weighted_us": 368.2418008965831,
+      "decode_load_speedup_projection": 1.0147223010657602
+    }
+  },
+  "attention_board_read_only_proxy": 1.0452554753324945,
+  "decode_board_read_only_projection": 1.0062584882170413,
+  "caveats": [
+    "Read-only proxy omits all attention computation, writes and merges; not a legal candidate or formal hardware bound.",
+    "Use faster native baseline A/A and slower read A/A conservatively; sliding timing comes from a separate same-source run.",
+    "Decode projection assumes all isolated attention delta is exposed and uses MAIN same-source full-layer costs on different inputs; not an end-to-end measurement."
+  ],
+  "tail": {
+    "D1": {
+      "all_tail_deletion_envelope_us": 2.608,
+      "weighted_delta_us": 0.6730322580645162,
+      "attention_load_speedup_if_entire_tail_free": 1.1187945180520524,
+      "guaranteed_realizable_saving_us": 0
+    },
+    "V1": {
+      "all_tail_deletion_envelope_us": 3.168,
+      "weighted_delta_us": 0.8175483870967742,
+      "attention_load_speedup_if_entire_tail_free": 1.0955659712140695,
+      "guaranteed_realizable_saving_us": 0
+    }
+  },
+  "attention_board_entire_small_tail_deletion_proxy": 1.0345023399887463
+}

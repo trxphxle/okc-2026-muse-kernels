@@ -1,0 +1,191 @@
+{
+  "status": "completed_ceiling_only",
+  "production_megakernel_built": false,
+  "official_checks_used": 0,
+  "ranked_submits_used": 0,
+  "baseline_sha256": "053dbacc8f0de4e6111ccb89cb91f629840852cf482a6ca423fe0eaff419c086",
+  "weight_seed": 5353,
+  "sources": {
+    "first": "work/lanes/dense/stream_bound/SUMMARY.json",
+    "repeat": "work/lanes/dense/stream_bound/REPEAT_SUMMARY.json",
+    "grouped_timing": "outputs/openkernel-challenge/modal-lab/layer-okc-h200-dense-04/layer-stream-bound.json",
+    "grouped_counters": "outputs/openkernel-challenge/modal-lab/layer-okc-h200-dense-05/stream-counter-proof.json"
+  },
+  "arithmetic": "Within each run, mean3 fixture medians per case;46 sliding+16 full divided by62 per load. Replace D1/V1 only; geomean over6 loads, other4 exactly1x. Displayed combined times are arithmetic means of two runs; both run-specific ceilings retained.",
+  "loads": {
+    "D1": {
+      "native": {
+        "layer_us": 72.96086924563173,
+        "stream_us": 58.10950625840054,
+        "gap_us": 14.851362987231184,
+        "load_ratio": 1.2555754461445663
+      },
+      "event": {
+        "layer_us": 76.86640750817074,
+        "stream_us": 62.68550552708167,
+        "gap_us": 14.180901981089065,
+        "load_ratio": 1.2262229818815542
+      },
+      "aa_ratios": [
+        0.998467732578958,
+        0.9968678347892531
+      ]
+    },
+    "V1": {
+      "native": {
+        "layer_us": 109.60117134996639,
+        "stream_us": 86.81078576528898,
+        "gap_us": 22.79038558467741,
+        "load_ratio": 1.262529424008394
+      },
+      "event": {
+        "layer_us": 113.73548295789509,
+        "stream_us": 92.4767306655325,
+        "gap_us": 21.258752292362587,
+        "load_ratio": 1.2298821783530682
+      },
+      "aa_ratios": [
+        1.0006593634259098,
+        1.0012992126999254
+      ]
+    }
+  },
+  "cases": [
+    {
+      "load": "D1",
+      "layer": "sliding",
+      "native_layer_us": 71.99365234375,
+      "native_stream_us": 60.710774739583336,
+      "native_gap_us": 11.282877604166664,
+      "mean_payload_bytes": 214533392,
+      "actual_experts_per_fixture": [
+        2,
+        4,
+        2
+      ],
+      "kv_bytes_per_fixture": [
+        524288,
+        524288,
+        524288
+      ]
+    },
+    {
+      "load": "D1",
+      "layer": "full",
+      "native_layer_us": 75.74161783854166,
+      "native_stream_us": 50.630859375,
+      "native_gap_us": 25.110758463541657,
+      "mean_payload_bytes": 225052176,
+      "actual_experts_per_fixture": [
+        2,
+        2,
+        3
+      ],
+      "kv_bytes_per_fixture": [
+        20480256,
+        20480256,
+        20480256
+      ]
+    },
+    {
+      "load": "V1",
+      "layer": "sliding",
+      "native_layer_us": 107.20613606770834,
+      "native_stream_us": 88.41642252604166,
+      "native_gap_us": 18.789713541666686,
+      "mean_payload_bytes": 346655760,
+      "actual_experts_per_fixture": [
+        7,
+        9,
+        6
+      ],
+      "kv_bytes_per_fixture": [
+        526080,
+        526080,
+        526080
+      ]
+    },
+    {
+      "load": "V1",
+      "layer": "full",
+      "native_layer_us": 116.48689778645834,
+      "native_stream_us": 82.194580078125,
+      "native_gap_us": 34.29231770833334,
+      "mean_payload_bytes": 376048912,
+      "actual_experts_per_fixture": [
+        8,
+        6,
+        9
+      ],
+      "kv_bytes_per_fixture": [
+        20482048,
+        20482048,
+        20482048
+      ]
+    }
+  ],
+  "gate": {
+    "native": {
+      "run_geomean_ratios": [
+        1.080440229185247,
+        1.0791824275223525
+      ],
+      "run_improvement_percent": [
+        8.044022918524707,
+        7.918242752235249
+      ],
+      "combined_ratio": 1.079810104374289,
+      "equal_extra_work_budget_us": [
+        6.221091658842816,
+        5.996866989647373
+      ]
+    },
+    "event": {
+      "run_geomean_ratios": [
+        1.0715118340266896,
+        1.0702391029179092
+      ],
+      "run_improvement_percent": [
+        7.151183402668959,
+        7.023910291790925
+      ],
+      "combined_ratio": 1.0708751152185676,
+      "equal_extra_work_budget_us": [
+        4.68425632737587,
+        4.416800952949629
+      ]
+    },
+    "threshold_ratio": 1.05,
+    "passed_both_timers_both_runs": true
+  },
+  "byte_proof_cases": 30,
+  "limitations": [
+    "routing computation/page selection is a free frozen-fixture oracle",
+    "no arithmetic or inter-stage dependencies",
+    "no layer outputs or KV writes",
+    "activation intermediates, output traffic and synchronization not modeled",
+    "native BF16 weight bytes are not baseline compressed physical traffic",
+    "This is a measured zero-math native-format stand-in, not a universal hardware lower bound or implemented speedup.",
+    "Changing a load means replacing its46:16 weighted sliding/full time; all other loads remain exactly1x in the six-load geomean.",
+    "Native profile spans and captured-event timings are independently observed; no replay-cost subtraction.",
+    "The5% gate is necessary evidence only; this task authorizes no production megakernel."
+  ],
+  "optional_D16": {
+    "best_tested_reader": "grouped",
+    "native": {
+      "base": 144.8633285030242,
+      "stream": 158.8211105510753
+    },
+    "event": {
+      "base": 147.7113138603908,
+      "base_repeat": 147.6483425145508,
+      "stream": 162.92163537394615
+    },
+    "native_gap_us": -13.957782048051087,
+    "event_gap_us": -15.210321513555357,
+    "recommended_replacement": false,
+    "improvement_credit": 0,
+    "note": "Flat reader is slower still on batched sparse KV; keep D16 unchanged. Not a universal D16 impossibility claim."
+  },
+  "current_source_matches_frozen": true
+}

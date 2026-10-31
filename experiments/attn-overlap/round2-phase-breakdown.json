@@ -1,0 +1,80 @@
+{
+  "source": "outputs/openkernel-challenge/modal-lab/layer-okc-h200-attn-overlap-03/round2-latency.json",
+  "scope": "Sparse source landmarks; no additive phase sums or claimed realizable savings",
+  "loads": {
+    "D1f": {
+      "prologue": {
+        "critical_last_loop_cta_phase_medians_us": {
+          "initial_kv_issue": 0.752,
+          "q_constants_wait_and_rope": 0.064,
+          "entry_to_page_indices": 1.216,
+          "consumer_init_and_first_kv_wait": 0.88,
+          "main_attention_after_first_ready": 4.08,
+          "all_prologue_to_first_ready": 3.168,
+          "new_kv_preparation_and_sync": 0.032,
+          "query_preparation": 0.224,
+          "final_cta_sync_and_exit_landmark": 0.032,
+          "new_kv_patch": 0.032
+        },
+        "last_loop_to_last_completion_median_us": 2.592,
+        "last_arrival_to_last_output_median_us": null,
+        "native_perturbation_ratio": 1.0073553525415788,
+        "biased": false
+      },
+      "tail": {
+        "critical_last_loop_cta_phase_medians_us": {
+          "final_readback_gate_load_and_workspace_reset": 0.64,
+          "merge_rescale_and_issue": 0.192,
+          "finalizer_slice_arithmetic": 0.096,
+          "post_output_finalizer_tail": 0.0,
+          "arrival_atomic": 0.848,
+          "merge_cta_sync_optional_fence": 0.0,
+          "arrival_to_wait_return_and_cta_sync": 0.224,
+          "denominator_norm_and_rms": 0.128,
+          "barrier_total_including_arrival": 1.12,
+          "final_cta_sync_and_exit_landmark": 0.032,
+          "sigmoid_gate_pack_output_issue": 0.16
+        },
+        "last_loop_to_last_completion_median_us": 2.608,
+        "last_arrival_to_last_output_median_us": 1.104,
+        "native_perturbation_ratio": 0.9895525884282034,
+        "biased": false
+      }
+    },
+    "V1f": {
+      "prologue": {
+        "critical_last_loop_cta_phase_medians_us": {
+          "initial_kv_issue": 0.512,
+          "q_constants_wait_and_rope": 0.032,
+          "entry_to_page_indices": 1.376,
+          "consumer_init_and_first_kv_wait": 0.8,
+          "main_attention_after_first_ready": 6.96,
+          "all_prologue_to_first_ready": 4.4,
+          "new_kv_preparation_and_sync": 0.032,
+          "query_preparation": 1.52,
+          "final_cta_sync_and_exit_landmark": 0.032,
+          "new_kv_patch": 0.14400000000000002
+        },
+        "last_loop_to_last_completion_median_us": 2.976,
+        "last_arrival_to_last_output_median_us": null,
+        "native_perturbation_ratio": 1.0390245559216114,
+        "biased": true
+      },
+      "tail": {
+        "critical_last_loop_cta_phase_medians_us": {
+          "merge_rescale_and_issue": 0.896,
+          "finalizer_slice_arithmetic": 0.16,
+          "arrival_atomic": 0.64,
+          "merge_cta_sync_optional_fence": 0.064,
+          "arrival_to_wait_return_and_cta_sync": 0.256,
+          "barrier_total_including_arrival": 0.832,
+          "final_cta_sync_and_exit_landmark": 0.064
+        },
+        "last_loop_to_last_completion_median_us": 3.168,
+        "last_arrival_to_last_output_median_us": 1.2,
+        "native_perturbation_ratio": 1.0106307101857828,
+        "biased": false
+      }
+    }
+  }
+}

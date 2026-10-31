@@ -1,0 +1,340 @@
+{
+  "kind": "measured_attention_overlap_ceiling",
+  "baseline_sha256": "4531458701f45eb713fcc885447149a563826316edea1f2a419a25b4f7c96964",
+  "runs": [
+    {
+      "experiment": "E1r",
+      "report": "outputs/openkernel-challenge/modal-lab/layer-okc-h200-attn-overlap-02/overlap-e1r.json",
+      "aa_accepted": true,
+      "cases": [
+        {
+          "load": "V16",
+          "layer": "sliding",
+          "median_us": {
+            "baseline": 264.67201113700867,
+            "baseline_repeat": 264.1279995441437,
+            "serial_attention": 264.70398902893066,
+            "delete_attention": 252.76800990104675,
+            "isolated_attention": 16.095999628305435
+          },
+          "aa_ratio": 1.0020596513576898,
+          "serial_ratio": 0.9998791937664434,
+          "attention_deletion_us": 11.904001235961914,
+          "native_attention_median_us": {
+            "baseline": 11.296,
+            "serial_attention": 11.264,
+            "isolated_attention": 11.361
+          },
+          "max_baseline_attention_overlap_us": 0.0,
+          "in_layer_minus_isolated_attention_us": -0.06500000000000128,
+          "qkv_median_us": 15.52,
+          "o_median_us": 7.232,
+          "qkv_to_attention_gap_range_us": [
+            0.41636718750000057,
+            1.2483242187499997
+          ],
+          "attention_to_o_gap_range_us": [
+            0.4159140625000006,
+            0.7038085937500007
+          ],
+          "oracle_checks_passed": true,
+          "real_arm_route_ids_equal": false
+        },
+        {
+          "load": "V16",
+          "layer": "full",
+          "median_us": {
+            "baseline": 356.4479947090149,
+            "baseline_repeat": 357.63201117515564,
+            "serial_attention": 354.8479974269867,
+            "delete_attention": 258.9440047740936,
+            "isolated_attention": 100.76799988746643
+          },
+          "aa_ratio": 0.9966892883490767,
+          "serial_ratio": 1.00450896522914,
+          "attention_deletion_us": 97.50398993492126,
+          "native_attention_median_us": {
+            "baseline": 97.186,
+            "serial_attention": 98.248,
+            "isolated_attention": 97.75
+          },
+          "max_baseline_attention_overlap_us": 0.03225390625000024,
+          "in_layer_minus_isolated_attention_us": -0.563999999999993,
+          "qkv_median_us": 15.522,
+          "o_median_us": 7.52,
+          "qkv_to_attention_gap_range_us": [
+            -0.03225390625000024,
+            0.44834765625000017
+          ],
+          "attention_to_o_gap_range_us": [
+            0.3190195312500066,
+            0.35062109374999295
+          ],
+          "oracle_checks_passed": true,
+          "real_arm_route_ids_equal": true
+        },
+        {
+          "load": "V32",
+          "layer": "sliding",
+          "median_us": {
+            "baseline": 322.9120075702667,
+            "baseline_repeat": 322.4959969520569,
+            "serial_attention": 322.2079873085022,
+            "delete_attention": 307.48799443244934,
+            "isolated_attention": 19.487999379634857
+          },
+          "aa_ratio": 1.0012899714171388,
+          "serial_ratio": 1.0021849869944113,
+          "attention_deletion_us": 15.424013137817383,
+          "native_attention_median_us": {
+            "baseline": 14.785,
+            "serial_attention": 14.879,
+            "isolated_attention": 15.104
+          },
+          "max_baseline_attention_overlap_us": 0.0,
+          "in_layer_minus_isolated_attention_us": -0.31899999999999906,
+          "qkv_median_us": 17.826,
+          "o_median_us": 8.832,
+          "qkv_to_attention_gap_range_us": [
+            0.28797265624999824,
+            0.2882578124999995
+          ],
+          "attention_to_o_gap_range_us": [
+            0.4169843749999984,
+            0.4801367187500034
+          ],
+          "oracle_checks_passed": true,
+          "real_arm_route_ids_equal": true
+        },
+        {
+          "load": "V32",
+          "layer": "full",
+          "median_us": {
+            "baseline": 497.0879852771759,
+            "baseline_repeat": 497.3759949207306,
+            "serial_attention": 496.3200092315674,
+            "delete_attention": 313.50401043891907,
+            "isolated_attention": 185.08799374103546
+          },
+          "aa_ratio": 0.9994209418096252,
+          "serial_ratio": 1.0015473404886448,
+          "attention_deletion_us": 183.58397483825684,
+          "native_attention_median_us": {
+            "baseline": 181.43,
+            "serial_attention": 181.347,
+            "isolated_attention": 179.606
+          },
+          "max_baseline_attention_overlap_us": 0.0,
+          "in_layer_minus_isolated_attention_us": 1.8240000000000123,
+          "qkv_median_us": 17.439,
+          "o_median_us": 8.832,
+          "qkv_to_attention_gap_range_us": [
+            0.22396875000000094,
+            0.25589453125000006
+          ],
+          "attention_to_o_gap_range_us": [
+            0.2878242187499893,
+            1.0570976562499936
+          ],
+          "oracle_checks_passed": true,
+          "real_arm_route_ids_equal": true
+        }
+      ],
+      "loads": {
+        "V16": {
+          "weighted_us": {
+            "baseline": 288.35613592978444,
+            "baseline_repeat": 288.2580670618242,
+            "serial_attention": 287.9669589381064,
+            "delete_attention": 254.36181502957498
+          },
+          "three_percent_gate_us": 8.650684077893533,
+          "optimistic_positive_attention_gap_us": 0.0,
+          "optimistic_positive_attention_gap_pct": 0.0,
+          "caveat": "Positive isolated-duration gap is an intentionally generous empirical proxy, not proof of overlap or a statistical upper bound."
+        },
+        "V32": {
+          "weighted_us": {
+            "baseline": 367.86064697850134,
+            "baseline_repeat": 367.6263190084888,
+            "serial_attention": 367.14012199832547,
+            "delete_attention": 309.0405146921835
+          },
+          "three_percent_gate_us": 11.035819409355039,
+          "optimistic_positive_attention_gap_us": 0.470709677419358,
+          "optimistic_positive_attention_gap_pct": 0.12795869340350163,
+          "caveat": "Positive isolated-duration gap is an intentionally generous empirical proxy, not proof of overlap or a statistical upper bound."
+        }
+      }
+    },
+    {
+      "experiment": "E2",
+      "report": "outputs/openkernel-challenge/modal-lab/layer-okc-h200-attn-overlap-02/overlap-e2.json",
+      "aa_accepted": true,
+      "cases": [
+        {
+          "load": "V16",
+          "layer": "sliding",
+          "median_us": {
+            "baseline": 231.1999946832657,
+            "baseline_repeat": 230.46399652957916,
+            "serial_attention": 231.55200481414795,
+            "delete_attention": 218.87999773025513,
+            "isolated_attention": 16.224000602960587
+          },
+          "aa_ratio": 1.0031935493819837,
+          "serial_ratio": 0.9984797793862126,
+          "attention_deletion_us": 12.319996953010559,
+          "native_attention_median_us": {
+            "baseline": 11.456,
+            "serial_attention": 11.393,
+            "isolated_attention": 11.583
+          },
+          "max_baseline_attention_overlap_us": 0.0,
+          "in_layer_minus_isolated_attention_us": -0.12700000000000067,
+          "qkv_median_us": 15.743,
+          "o_median_us": 7.295,
+          "qkv_to_attention_gap_range_us": [
+            0.2867968750000003,
+            0.6078593750000003
+          ],
+          "attention_to_o_gap_range_us": [
+            0.44784375000000054,
+            0.7039296875000005
+          ],
+          "oracle_checks_passed": true,
+          "real_arm_route_ids_equal": true
+        },
+        {
+          "load": "V16",
+          "layer": "full",
+          "median_us": {
+            "baseline": 315.3280019760132,
+            "baseline_repeat": 313.3760094642639,
+            "serial_attention": 313.1519854068756,
+            "delete_attention": 216.0000056028366,
+            "isolated_attention": 103.29599678516388
+          },
+          "aa_ratio": 1.0062289149545502,
+          "serial_ratio": 1.0069487554623366,
+          "attention_deletion_us": 99.32799637317657,
+          "native_attention_median_us": {
+            "baseline": 99.961,
+            "serial_attention": 99.745,
+            "isolated_attention": 99.067
+          },
+          "max_baseline_attention_overlap_us": 0.0,
+          "in_layer_minus_isolated_attention_us": 0.8940000000000055,
+          "qkv_median_us": 15.521,
+          "o_median_us": 7.552,
+          "qkv_to_attention_gap_range_us": [
+            0.22373046874999858,
+            0.3842734374999992
+          ],
+          "attention_to_o_gap_range_us": [
+            0.31971484375000614,
+            0.3202500000000015
+          ],
+          "oracle_checks_passed": true,
+          "real_arm_route_ids_equal": true
+        },
+        {
+          "load": "V32",
+          "layer": "sliding",
+          "median_us": {
+            "baseline": 313.18399310112,
+            "baseline_repeat": 312.3840093612671,
+            "serial_attention": 311.5519881248474,
+            "delete_attention": 298.335999250412,
+            "isolated_attention": 19.7759997099638
+          },
+          "aa_ratio": 1.0025608984963368,
+          "serial_ratio": 1.0052383070514017,
+          "attention_deletion_us": 14.847993850708008,
+          "native_attention_median_us": {
+            "baseline": 14.689,
+            "serial_attention": 14.624,
+            "isolated_attention": 14.997
+          },
+          "max_baseline_attention_overlap_us": 0.0,
+          "in_layer_minus_isolated_attention_us": -0.30799999999999983,
+          "qkv_median_us": 17.523,
+          "o_median_us": 8.897,
+          "qkv_to_attention_gap_range_us": [
+            0.2572734375000003,
+            0.31996093749999943
+          ],
+          "attention_to_o_gap_range_us": [
+            0.44794531249999636,
+            0.5137851562500018
+          ],
+          "oracle_checks_passed": true,
+          "real_arm_route_ids_equal": true
+        },
+        {
+          "load": "V32",
+          "layer": "full",
+          "median_us": {
+            "baseline": 499.3920028209686,
+            "baseline_repeat": 497.0239996910095,
+            "serial_attention": 498.07998538017273,
+            "delete_attention": 316.6719973087311,
+            "isolated_attention": 188.03200125694275
+          },
+          "aa_ratio": 1.0047643637559378,
+          "serial_ratio": 1.0026341500949782,
+          "attention_deletion_us": 182.72000551223755,
+          "native_attention_median_us": {
+            "baseline": 181.611,
+            "serial_attention": 181.461,
+            "isolated_attention": 181.497
+          },
+          "max_baseline_attention_overlap_us": 0.0,
+          "in_layer_minus_isolated_attention_us": 0.1139999999999759,
+          "qkv_median_us": 17.535,
+          "o_median_us": 8.833,
+          "qkv_to_attention_gap_range_us": [
+            0.22401562499999983,
+            0.28824218749999986
+          ],
+          "attention_to_o_gap_range_us": [
+            0.2881523437499993,
+            0.3527968749999957
+          ],
+          "oracle_checks_passed": true,
+          "real_arm_route_ids_equal": true
+        }
+      ],
+      "loads": {
+        "V16": {
+          "weighted_us": {
+            "baseline": 252.91044817816825,
+            "baseline_repeat": 251.86064502885264,
+            "serial_attention": 252.61006432194864,
+            "delete_attention": 218.13677395543743
+          },
+          "three_percent_gate_us": 7.587313445345047,
+          "optimistic_positive_attention_gap_us": 0.23070967741935625,
+          "optimistic_positive_attention_gap_pct": 0.09122188469526091,
+          "caveat": "Positive isolated-duration gap is an intentionally generous empirical proxy, not proof of overlap or a statistical upper bound."
+        },
+        "V32": {
+          "weighted_us": {
+            "baseline": 361.2376730288229,
+            "baseline_repeat": 360.0330391237813,
+            "serial_attention": 359.6882454810604,
+            "delete_attention": 303.067869717075
+          },
+          "three_percent_gate_us": 10.837130190864686,
+          "optimistic_positive_attention_gap_us": 0.02941935483870346,
+          "optimistic_positive_attention_gap_pct": 0.008144043945371144,
+          "caveat": "Positive isolated-duration gap is an intentionally generous empirical proxy, not proof of overlap or a statistical upper bound."
+        }
+      }
+    }
+  ],
+  "baseline_native_traces": 32,
+  "all_native_traces": 96,
+  "official_checks_used": 0,
+  "decision": "Do not implement PDL-delay/SM-partition changes: no material co-running GEMM; existing verify attention is serial."
+}

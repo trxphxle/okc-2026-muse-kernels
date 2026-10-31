@@ -1,0 +1,73 @@
+{
+ "note": "Qualified best sources with explicit ranking status. Previous ranked records remain preserved during a pending promotion. Upstream Apache-2.0/NOTICE/MIT attribution is retained inside each imported file.",
+ "best": [
+  {
+   "file": "best/decode_layer.py",
+   "problem": "muse_decode_layer",
+   "ranked_speedup": 2.175617759631188,
+   "job": "e332b777510d4174",
+   "run_record": "outputs/openkernel-challenge/runs/decode-alygg77-bf16-ranked.json",
+   "original": "work/candidates/decode_alygg77_bf16.py",
+   "sha256": "053dbacc8f0de4e6111ccb89cb91f629840852cf482a6ca423fe0eaff419c086",
+   "source_status": "ranked",
+   "checked_speedup": 2.1916170775831167,
+   "checked_speedup_ci": [2.15874282141937, 2.2244913337468635],
+   "ranked_speedup_ci": [2.1429834932367204, 2.2082520260256557],
+   "check_job": "48e6172916524da7",
+   "check_record": "outputs/openkernel-challenge/runs/decode-alygg77-bf16-check.json",
+   "previous_ranked_best": {
+    "speedup": 2.0355718095234185,
+    "job": "f2bca5e0fa9c474f",
+    "run_record": "outputs/openkernel-challenge/runs/layer-unpooler-pdl-ranked.json",
+    "original": "outputs/openkernel-challenge/decode-layer/submission_two_layout_unpooler_pdl.py",
+    "sha256": "559e797fed0fe0037518ff3cf7d34957078f8767c6f434ab0147b4ba81017bab"
+   },
+   "counts_toward_overall": true,
+   "first_line": "# okc: problem=muse_decode_layer"
+  },
+  {
+   "file": "best/moe.py",
+   "problem": "muse_moe_w4a16",
+   "ranked_speedup": 2.3249,
+   "job": "c159271f4be34bc6",
+   "run_record": "outputs/openkernel-challenge/runs/moe-multilayout-ranked.json",
+   "original": "outputs/openkernel-challenge/moe/submission_persistent_reproduction.py",
+   "sha256": "ee6183000e8d179428308a1dbd28d48d3ae06481f133591dcaae2f488d3d451f",
+   "counts_toward_overall": true,
+   "first_line": "# okc: problem=muse_moe_w4a16"
+  },
+  {
+   "file": "best/attention.py",
+   "problem": "muse_attention_decode",
+   "ranked_speedup": 2.5673,
+   "job": "7401cdbfccba4357",
+   "run_record": "outputs/openkernel-challenge/runs/attention-ranked.json",
+   "original": "outputs/openkernel-challenge/attention/submission_attention_reproduction.py",
+   "sha256": "c2a35d0ef51d78f4c51fd4a1f1d5704401df5e916c8df6deca0754040d4fec19",
+   "counts_toward_overall": true,
+   "first_line": "# okc: problem=muse_attention_decode"
+  },
+  {
+   "file": "best/dense_projections.py",
+   "problem": "muse_bf16_proj",
+   "ranked_speedup": 1.4423,
+   "job": "adb94f9d829a44e3",
+   "run_record": "outputs/openkernel-challenge/runs/projections-rk-pooler-cluster1-ranked.json",
+   "original": "outputs/openkernel-challenge/dense-projections/submission_broad_rk_pooler_cluster1.py",
+   "sha256": "094f85f7518ca1e726e97698873c3a48c3214914c850fefbc8ec5cf3c408d8c7",
+   "counts_toward_overall": true,
+   "first_line": "# okc: problem=muse_bf16_proj"
+  },
+  {
+   "file": "best/prefill_layer.py",
+   "problem": "muse_prefill_layer",
+   "ranked_speedup": 1.4774,
+   "job": "23badfd3441943cc",
+   "run_record": "outputs/openkernel-challenge/runs/prefill-grouped-ranked.json",
+   "original": "outputs/openkernel-challenge/prefill-layer/submission_grouped_experts.py",
+   "sha256": "59177ca631cc2bb69bc745d5045a9c74bc6578b7dcd8fb4b0f890995802f0495",
+   "counts_toward_overall": false,
+   "first_line": "# okc: problem=muse_prefill_layer"
+  }
+ ]
+}

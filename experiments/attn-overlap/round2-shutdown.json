@@ -1,0 +1,45 @@
+{
+  "checked_at": "2026-10-31T00:35:47.932726-07:00",
+  "reason": "PM kill: idealized gather replacement projects only1.0062584882170413x decode; stop further attention work",
+  "prototype_job": "bg_11 cancelled; no P64 result claimed",
+  "workspace": "secondary-workspace",
+  "sandbox": {
+    "name": "okc-h200-attn-overlap-05",
+    "sandbox_id": "sb-SJKLDe131JUoig97rkAMIP",
+    "state": "finished",
+    "exit_code": 137,
+    "last_checked_at": "2026-10-31T07:32:10.728336+00:00",
+    "observed_finished_at": "2026-10-31T07:32:10.728364+00:00"
+  },
+  "sdk_verified_identity_and_exit": {
+    "sandbox_id": "sb-SJKLDe131JUoig97rkAMIP",
+    "task_id": "ta-01M68DSGQ945684C4S8W53KQ3S",
+    "exit_code": 137
+  },
+  "terminated_container_absent": true,
+  "active_containers": [
+    {
+      "container_id": "ta-01M68DZB0AZX79W7DGKQQ2XFQS",
+      "app_id": "ap-NzwBDMg2TMxBvleKyFOsYW",
+      "app_name": "okc-trxphxle-01a18750",
+      "start_time": "2026-10-31 00:32:24-07:00"
+    },
+    {
+      "container_id": "ta-01M68DSB6ZF37H5ZGSG2E506MS",
+      "app_id": "ap-NzwBDMg2TMxBvleKyFOsYW",
+      "app_name": "okc-trxphxle-01a18750",
+      "start_time": "2026-10-31 00:29:08-07:00"
+    }
+  ],
+  "identity_caveat": "An unrelated container shared the request start second; identity was resolved using Sandbox._get_task_id(), never inferred from timestamps.",
+  "legacy_old_workspace": {
+    "sandbox_id": "sb-AKsgj1wuHXlVZNl06V8O5i",
+    "handling": "Left to 1800s lifetime per PM; no old-profile access",
+    "configured_expiry_pt": "2026-10-31T00:43:55-07:00",
+    "termination_not_actively_verified": true
+  },
+  "official_checks": {
+    "attention": 0,
+    "decode": 0
+  }
+}

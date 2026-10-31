@@ -1,0 +1,140 @@
+{
+  "repaired_sha256": "053dbacc8f0de4e6111ccb89cb91f629840852cf482a6ca423fe0eaff419c086",
+  "groups": [
+    {
+      "id": "attn_native_qk_norm",
+      "status": "syntax_and_anchors_passed",
+      "sha256": "e62fe2b8bd23d0d62930cc1c53cfa4f1fcd52692fe8fa5c4297161f1389ee0b5"
+    },
+    {
+      "id": "attn_native_rope",
+      "status": "syntax_and_anchors_passed",
+      "sha256": "939d8e1ba7c6e15c7b64c16cd6d0cc74efca43e55e69c5959cc39f173222810f"
+    },
+    {
+      "id": "attn_native_cache_scale",
+      "status": "syntax_and_anchors_passed",
+      "sha256": "27cfaa83ef252994e5db729792b2ca03ba9fa2d9b14f2f0d969130f8d28009ff"
+    },
+    {
+      "id": "attn_native_output",
+      "status": "syntax_and_anchors_passed",
+      "sha256": "9be1d6433dfb8a5866d202d85c86cecef3b44faca777f91662a9664964620737"
+    },
+    {
+      "id": "attn_fallback_qkv_projection",
+      "status": "syntax_and_anchors_passed",
+      "sha256": "cf5d4887a353459c18dd5ec549385028d1247b38b258bf92dd43f17cf9c1e235"
+    },
+    {
+      "id": "attn_fallback_qk_norm",
+      "status": "syntax_and_anchors_passed",
+      "sha256": "17749c6c68fa097992209f6279788ff2f6b0d64c41e7347bdbca68a70cb100a9"
+    },
+    {
+      "id": "attn_fallback_rope",
+      "status": "syntax_and_anchors_passed",
+      "sha256": "41bc4a31052f20163285a6b5e50609dc362c8024315383c0c9134c7994201eab"
+    },
+    {
+      "id": "attn_fallback_cache_scale",
+      "status": "syntax_and_anchors_passed",
+      "sha256": "f877cd7bdd45712dd4195ec244e924b4b676fb7500249f3af798ad109b221f15"
+    },
+    {
+      "id": "attn_fallback_output",
+      "status": "syntax_and_anchors_passed",
+      "sha256": "e2552dbd4dc4566242631f4ca19c879d12e7bf0b097caaedd4db0100b9d6ac5e"
+    },
+    {
+      "id": "experts_gemm1_bf16",
+      "status": "syntax_and_anchors_passed",
+      "sha256": "da54819c4ca654a591fe922f38d47fffb6b5729d3f7ae9e7179c43306fc87cd0"
+    },
+    {
+      "id": "experts_gemm2_bf16",
+      "status": "syntax_and_anchors_passed",
+      "sha256": "8b5cb5ea15428fee8e86937da34a0e3a854244a8835dea9424cb13ffdf9408ee"
+    },
+    {
+      "id": "experts_effective_gain_bf16",
+      "status": "syntax_and_anchors_passed",
+      "sha256": "03ae0748ddacfcba44c48cb2efaa11c042f1c14e1d3f843f606b845ebe0beeda"
+    },
+    {
+      "id": "glue_pooler_output_bf16",
+      "status": "syntax_and_anchors_passed",
+      "sha256": "a5e37a71575b2bcf1702b34bc76c87a7255f961d55b3f473253a831a2e9a269f"
+    },
+    {
+      "id": "glue_pre_expert_effective_gain",
+      "status": "syntax_and_anchors_passed",
+      "sha256": "ed5697e31d62af85487282e7fbd08fecdcb90b320e76b52234d96a39f584734c"
+    },
+    {
+      "id": "glue_b1_projection_bf16",
+      "status": "syntax_and_anchors_passed",
+      "sha256": "94a5efe9ea5285156189130f26adcfc5571990f11c4bb6e8a8f31ed476b1926a"
+    },
+    {
+      "id": "glue_base_b1_branch_bf16",
+      "status": "syntax_and_anchors_passed",
+      "sha256": "4a9943335c91a8be5ac9141d22d8ce5275ef8a2b3c8531d762306a4af83250f4"
+    },
+    {
+      "id": "glue_base_b1_effective_gain",
+      "status": "syntax_and_anchors_passed",
+      "sha256": "f5bf8fdccf6b91b63afba74834122c020b7623656d675e136d0969d65b0349be"
+    },
+    {
+      "id": "glue_b2_projection_bf16",
+      "status": "syntax_and_anchors_passed",
+      "sha256": "f2b3465662aab9cb78b776be722f7f49f3de6f7223c787f469a9c1560d1fb5b1"
+    },
+    {
+      "id": "glue_base_b2_weighted_bf16",
+      "status": "syntax_and_anchors_passed",
+      "sha256": "fdf208df558f7bf63a19eb6e99edbdf5dadb14315533cf5d26330c6b8f6897ac"
+    },
+    {
+      "id": "glue_base_b2_branch_bf16",
+      "status": "syntax_and_anchors_passed",
+      "sha256": "6d76e80ac5213b9975f0a3b11838573061c8bbd4d69c74840f11df4a439a08fe"
+    },
+    {
+      "id": "glue_base_b2_post_effective_gain",
+      "status": "syntax_and_anchors_passed",
+      "sha256": "8a9b2fa96fd0048cad0efa995e02f4fe6e0c0571ebdcdb4a3dd1b5bba3f708ef"
+    },
+    {
+      "id": "glue_base_b2_next_effective_gain",
+      "status": "syntax_and_anchors_passed",
+      "sha256": "1d2a1b6b41e9598604eec00165bcbc48b4b0610141a90d8bf50c51f7b7053ad1"
+    },
+    {
+      "id": "glue_deferred_gle_removed",
+      "status": "structural_or_host_only",
+      "reason": "glue_deferred_gle_removed: structural contrast, not a single-boundary ablation; use raw_contrast/repaired_contrast entrypoints and preserve separate attribution"
+    },
+    {
+      "id": "glue_native_router_b1x_removed",
+      "status": "structural_or_host_only",
+      "reason": "glue_native_router_b1x_removed: structural contrast, not a single-boundary ablation; use raw_contrast/repaired_contrast entrypoints and preserve separate attribution"
+    },
+    {
+      "id": "glue_moment_policy_removed",
+      "status": "structural_or_host_only",
+      "reason": "glue_moment_policy_removed: structural contrast, not a single-boundary ablation; use raw_contrast/repaired_contrast entrypoints and preserve separate attribution"
+    },
+    {
+      "id": "glue_explicit_state_gain",
+      "status": "structural_or_host_only",
+      "reason": "glue_explicit_state_gain: host_only contrast, not a single-boundary ablation; use raw_contrast/repaired_contrast entrypoints and preserve separate attribution"
+    },
+    {
+      "id": "glue_codec_fallback",
+      "status": "structural_or_host_only",
+      "reason": "glue_codec_fallback: host_only contrast, not a single-boundary ablation; use raw_contrast/repaired_contrast entrypoints and preserve separate attribution"
+    }
+  ]
+}

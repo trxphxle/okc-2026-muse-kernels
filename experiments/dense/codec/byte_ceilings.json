@@ -1,0 +1,202 @@
+{
+  "scope": "Optimistic byte-only model: scale all BF16 latencies at T<=32 by format_bits/12, including overheads that do not actually scale; router and T>=128 unchanged. Not an implementation speedup. Huffman uses mean measured bits per matrix over available seeds, including measured1024-row prefixes.",
+  "sources": {
+    "baseline": "outputs/openkernel-challenge/modal-lab/layer-okc-h200-dense-02/dense-aa36.json",
+    "fixed_codec": "outputs/openkernel-challenge/modal-lab/layer-okc-h200-dense-02/codec-bound.json",
+    "huffman": "outputs/openkernel-challenge/modal-lab/layer-okc-h200-dense-02/huffman-bound.json",
+    "huffman_repeats": [
+      "outputs/openkernel-challenge/modal-lab/layer-okc-h200-dense-02/huffman-6161.json",
+      "outputs/openkernel-challenge/modal-lab/layer-okc-h200-dense-02/huffman-7171.json"
+    ]
+  },
+  "models": {
+    "window11_tile": {
+      "loads": [
+        {
+          "m": 1,
+          "raw_baseline_us": 56.04800023138523,
+          "ideal_us": 53.2660843487043,
+          "ideal_saved_us": 2.7819158826809343,
+          "ideal_ratio": 1.052226776506965
+        },
+        {
+          "m": 16,
+          "raw_baseline_us": 69.23199957236648,
+          "ideal_us": 65.88316997109901,
+          "ideal_saved_us": 3.348829601267468,
+          "ideal_ratio": 1.050829818946728
+        },
+        {
+          "m": 32,
+          "raw_baseline_us": 73.6160003580153,
+          "ideal_us": 70.05398631760423,
+          "ideal_saved_us": 3.5620140404110714,
+          "ideal_ratio": 1.0508467002043531
+        },
+        {
+          "m": 8,
+          "raw_baseline_us": 58.256001211702824,
+          "ideal_us": 55.389381482252396,
+          "ideal_saved_us": 2.866619729450427,
+          "ideal_ratio": 1.0517539581186501
+        },
+        {
+          "m": 128,
+          "raw_baseline_us": 88.04800175130367,
+          "ideal_us": 88.04800175130367,
+          "ideal_saved_us": 0.0,
+          "ideal_ratio": 1.0
+        },
+        {
+          "m": 256,
+          "raw_baseline_us": 103.18399965763092,
+          "ideal_us": 103.18399965763092,
+          "ideal_saved_us": 0.0,
+          "ideal_ratio": 1.0
+        }
+      ],
+      "ideal_geomean_ratio": 1.0339888991395263
+    },
+    "best_window11_tile": {
+      "loads": [
+        {
+          "m": 1,
+          "raw_baseline_us": 56.04800023138523,
+          "ideal_us": 53.14560215294996,
+          "ideal_saved_us": 2.9023980784352688,
+          "ideal_ratio": 1.054612196698465
+        },
+        {
+          "m": 16,
+          "raw_baseline_us": 69.23199957236648,
+          "ideal_us": 65.60138973772413,
+          "ideal_saved_us": 3.6306098346423425,
+          "ideal_ratio": 1.0553434896601672
+        },
+        {
+          "m": 32,
+          "raw_baseline_us": 73.6160003580153,
+          "ideal_us": 69.75810469635361,
+          "ideal_saved_us": 3.8578956616616864,
+          "ideal_ratio": 1.0553039059540754
+        },
+        {
+          "m": 8,
+          "raw_baseline_us": 58.256001211702824,
+          "ideal_us": 55.258036140998776,
+          "ideal_saved_us": 2.9979650707040477,
+          "ideal_ratio": 1.0542539199738172
+        },
+        {
+          "m": 128,
+          "raw_baseline_us": 88.04800175130367,
+          "ideal_us": 88.04800175130367,
+          "ideal_saved_us": 0.0,
+          "ideal_ratio": 1.0
+        },
+        {
+          "m": 256,
+          "raw_baseline_us": 103.18399965763092,
+          "ideal_us": 103.18399965763092,
+          "ideal_saved_us": 0.0,
+          "ideal_ratio": 1.0
+        }
+      ],
+      "ideal_geomean_ratio": 1.0362588020987846
+    },
+    "dictionary11": {
+      "loads": [
+        {
+          "m": 1,
+          "raw_baseline_us": 56.04800023138523,
+          "ideal_us": 52.76919276685808,
+          "ideal_saved_us": 3.278807464527148,
+          "ideal_ratio": 1.0621348800807584
+        },
+        {
+          "m": 16,
+          "raw_baseline_us": 69.23199957236648,
+          "ideal_us": 65.12693634319542,
+          "ideal_saved_us": 4.105063229171051,
+          "ideal_ratio": 1.063031726343442
+        },
+        {
+          "m": 32,
+          "raw_baseline_us": 73.6160003580153,
+          "ideal_us": 69.25307459413787,
+          "ideal_saved_us": 4.362925763877428,
+          "ideal_ratio": 1.0629997410143397
+        },
+        {
+          "m": 8,
+          "raw_baseline_us": 58.256001211702824,
+          "ideal_us": 54.869332486557276,
+          "ideal_saved_us": 3.3866687251455474,
+          "ideal_ratio": 1.061722433491883
+        },
+        {
+          "m": 128,
+          "raw_baseline_us": 88.04800175130367,
+          "ideal_us": 88.04800175130367,
+          "ideal_saved_us": 0.0,
+          "ideal_ratio": 1.0
+        },
+        {
+          "m": 256,
+          "raw_baseline_us": 103.18399965763092,
+          "ideal_us": 103.18399965763092,
+          "ideal_saved_us": 0.0,
+          "ideal_ratio": 1.0
+        }
+      ],
+      "ideal_geomean_ratio": 1.041226010009337
+    },
+    "huffman128": {
+      "loads": [
+        {
+          "m": 1,
+          "raw_baseline_us": 56.04800023138523,
+          "ideal_us": 51.90298592336414,
+          "ideal_saved_us": 4.145014308021089,
+          "ideal_ratio": 1.0798608063540176
+        },
+        {
+          "m": 16,
+          "raw_baseline_us": 69.23199957236648,
+          "ideal_us": 64.03834974987608,
+          "ideal_saved_us": 5.1936498224904,
+          "ideal_ratio": 1.0811021808459462
+        },
+        {
+          "m": 32,
+          "raw_baseline_us": 73.6160003580153,
+          "ideal_us": 68.09670572242499,
+          "ideal_saved_us": 5.519294635590313,
+          "ideal_ratio": 1.0810508317111256
+        },
+        {
+          "m": 8,
+          "raw_baseline_us": 58.256001211702824,
+          "ideal_us": 53.974319627765716,
+          "ideal_saved_us": 4.281681583937107,
+          "ideal_ratio": 1.079328125180007
+        },
+        {
+          "m": 128,
+          "raw_baseline_us": 88.04800175130367,
+          "ideal_us": 88.04800175130367,
+          "ideal_saved_us": 0.0,
+          "ideal_ratio": 1.0
+        },
+        {
+          "m": 256,
+          "raw_baseline_us": 103.18399965763092,
+          "ideal_us": 103.18399965763092,
+          "ideal_saved_us": 0.0,
+          "ideal_ratio": 1.0
+        }
+      ],
+      "ideal_geomean_ratio": 1.0528641912599987
+    }
+  }
+}

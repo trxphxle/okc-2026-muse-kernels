@@ -1,0 +1,12 @@
+{
+  "kind": "exact_b1_row",
+  "logical_threads": 1024,
+  "values_per_thread": 8,
+  "original_ctas_per_row": 8,
+  "candidate_ctas_per_row": 1,
+  "preserved": "ga/gm/gf/gb/gr, local_squares, descending XOR butterflies, column mapping, branch BF16, residual FMA, FP32 router, carry and tail",
+  "input_sha256": "053dbacc8f0de4e6111ccb89cb91f629840852cf482a6ca423fe0eaff419c086",
+  "output_sha256": "504e75b27e85caa37e112e0330853381faa910c5ec16b760d602a3df3ebefa31",
+  "before_cuda_sha256": "50b0ad89046e55d305aca7ee8e3e494e10331378e8751441de3731e471aacb4a",
+  "after_cuda_sha256": "97086c95dbad2ebe26f2ebe4318cc18c399aa4a7886958ac7ea9cb78d726d687"
+}
